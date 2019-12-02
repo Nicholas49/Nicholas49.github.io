@@ -1,0 +1,467 @@
+<!doctype html>
+<head>
+  <style>
+
+    body{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    #squarebox{
+      width: 99vmin;
+      height: 99vmin;
+      margin: auto;
+      position: relative;
+    }
+
+    #hex1{
+      top: 40%;
+      left: 44%;
+    }
+
+    #hex2{
+      top: 50%;
+      left: 50%;
+    }
+
+    #hex3{
+      top: 40%;
+      left: 56%
+    }
+
+    #hex4{
+      top: 50%;
+      left: 38%;
+    }
+
+    #hex5{
+      top: 50%;
+      left: 62%;
+    }
+
+    #hex6{
+      top: 60%;
+      left: 44%
+    }
+
+    #hex7{
+      top: 60%;
+      left: 56%
+    }
+
+    .hexbox{
+    visibility: hidden;
+    position: absolute;
+    width: 70vmin;
+    overflow: hidden;
+    transition: height 1s;
+    transform: translate(-50%, -50%) rotate(-150deg);
+    }
+
+    .hexbox > div, .hexbox > div > div{
+      width: 100%;
+      height: 100%;
+      transform: rotate(60deg);
+      overflow: hidden;
+    }
+
+    .hexbox > div{
+    }
+
+    .hexbox > div > div{
+      background-color: #004488;
+      visibility: visible;
+      opacity: 0.98;
+    }
+
+    .stationary{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(30deg);
+      background-color: #660066;
+    }
+
+    .ahexbox{
+      visibility: hidden;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 25vmin;
+      height: 10vmin;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      transform: translate(-50%, -50%) rotate(120deg);
+      opacity: 0.98;
+    }
+
+    .ahexbox > div, .ahexbox > div > div{
+      width: 100%;
+      height: 100%;
+      transform: rotate(-60deg);
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    .ahexbox > div > div{
+      background-color: #000000;
+      visibility: visible;
+      transition: background-color 0.3s;
+    }
+
+    .icon{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 7vmin;
+      transform: translate(-50%, -50%);
+    }
+
+    #searchbox{
+      position: absolute;
+      left: 50%;
+      top: 3vmin;
+      height: 10%;
+      width: 90%;
+      transform: translate(-50%, 0%);
+      text-align: center;
+    }
+
+    #searchbox > input{
+      display: inline-block;
+      font-size: 43px;
+      font-family: sans-serif;
+      border: 0px;
+      outline: none;
+      background: transparent;
+      max-width: 75vw;
+      background-color:#333333;
+      color:#ffffff;
+      text-align:center;
+      filter: opacity(30%);
+    }
+
+    #searchbox > button{
+      display: inline-block;
+      background-color: #333333;
+      border: 0px;
+      padding: 10px;
+    }
+
+    #searchbox img{
+      width: 30px;
+    }
+
+  </style>
+  <script>
+    function loadpage(){
+      hexes = document.getElementsByClassName("hexbox");
+      for (i = 0; i < hexes.length; i++) {
+        hexes[i].style.height = "10vmin";
+      }
+      generate();
+
+      myObj = {name: "Bob", age: 31, city: "New York"};
+      myJSON = JSON.stringify(myObj);
+      localStorage.setItem("testJSON", myJSON);
+    }
+
+    function xpand(caller) {
+
+      var already;
+      var parentbox = caller.parentNode.parentNode;
+
+      if(parentbox.style.height === "50vmin"){
+        already = true;
+      }
+
+      hexes = document.getElementsByClassName("hexbox");
+      for (i = 0; i < hexes.length; i++) {
+        hexes[i].style.zIndex = "0";
+        hexes[i].style.height = "10vmin";
+      }
+
+      parentbox.style.zIndex = "1";
+
+      if(!already){
+        parentbox.style.height = "50vmin";
+      }
+    }
+
+    function generate(){
+
+      var c2 = 9.5;
+      var c1 = c2 * 2;
+      var c3 = 0;
+      var c4 = c2 * -1;
+      var c5 = c1 * -1;
+
+      var r4 = 5.5;
+      var r5 = 0;
+      var r3 = 2 * r4;
+      var r2 = 3 * r4;
+      var r1 = 4 * r4;
+      var r6 = r4 * -1;
+      var r7 = r3 * -1;
+      var r8 = r2 * -1;
+      var r9 = r1 * -1;
+
+      var caticons = [
+        "media",
+        "net",
+        "pencil",
+        "blank",
+        "blank",
+        "blank",
+        "blank"
+      ];
+
+      var hexlinks = [
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#444444"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#987654"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "https://www.washingtonpost.com/", icon: "washingtonpost", color: "#444444"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "stumbleupon", color: "#ff4000"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "newegg", color: "#ffc000"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "cnn", color: "#cc0000"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "busey", color: "#0066cc"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "wikipedia", color: "#909090"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "duckduckgo", color: "#aa4400"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "bing", color: "#ddcc00"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "amazon", color: "#887700"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "discord", color: "#663366"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "tumblr", color: "#ffaaaa"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#0077bb"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#0077ff"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#00bb00"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#00bb33"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#00bb77"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#00bbbb"},
+
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#444444"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#987654"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "https://www.washingtonpost.com/", icon: "washingtonpost", color: "#444444"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "stumbleupon", color: "#ff4000"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "newegg", color: "#ffc000"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "cnn", color: "#cc0000"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "busey", color: "#0066cc"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "wikipedia", color: "#909090"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "duckduckgo", color: "#aa4400"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "bing", color: "#ddcc00"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "amazon", color: "#887700"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "discord", color: "#663366"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "tumblr", color: "#ffaaaa"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#0077bb"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#0077ff"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#00bb00"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#00bb33"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#00bb77"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#00bbbb"},
+
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
+        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"}
+      ];
+
+      hexes = document.getElementsByClassName('stationary');
+      for (i = 0; i < hexes.length; i++){
+        var innercontent = "";
+
+        innercontent += "<img class='icon' src='" + caticons[i] + ".svg'/>";
+        for (j = 0; j < 18; j++){
+          innercontent += "<a href='" + hexlinks[j].trget + "'><div class='ahexbox'><div><div onmouseover='this.style.backgroundColor = this.title' onmouseout=\"this.style.backgroundColor = \'#000000\'\"></div></div></div></a>";
+        }
+        hexes[i].innerHTML = innercontent;
+      }
+
+      innerhexes = document.getElementsByClassName('ahexbox');
+      for (i = 0; i < innerhexes.length; i++){
+        innerhexes[i].style.top = hexlinks[i]["ycoord"] + "vmin";
+        innerhexes[i].style.left = hexlinks[i]["xcoord"] + "vmin";
+        innerhexes[i].firstChild.firstChild.title = hexlinks[i].color;
+        innerhexes[i].firstChild.firstChild.innerHTML = "<img class='icon' src='" + hexlinks[i].icon + ".svg'/>";
+      }
+    }
+
+
+    function verifyKey(e) {
+        var keycode;
+        if (window.event) {
+            keycode = window.event.keyCode;
+        } else if (e) {
+            keycode = e.which;
+        }
+        if (keycode === 13) {
+  //          clearContent();
+  //          interpret();
+        }
+        checkInputLength();
+    }
+
+
+    function checkInputLength() {
+        var input = document.getElementById('searchline');
+        if (input.value.length > 20) {
+            input.size = input.value.length + 1;
+        } else {
+            input.size = 20;
+        }
+    }
+
+
+  </script>
+</head>
+<body onload="loadpage()">
+  <div id="squarebox">
+    <div id="searchbox">
+        <input type="text" id="searchline" onkeypress='return verifyKey(event)' autofocus>
+        <button><img src='search.svg'/></button>
+    </div>
+
+    <div class="hexbox" id="hex1">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexbox" id="hex2">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexbox" id="hex3">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexbox" id="hex4">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexbox" id="hex5">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexbox" id="hex6">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hexbox" id="hex7">
+      <div>
+        <div onclick="xpand(this)">
+          <div class="stationary"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>

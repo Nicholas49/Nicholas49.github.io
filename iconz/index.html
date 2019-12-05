@@ -55,7 +55,7 @@
     position: absolute;
     width: 70vmin;
     overflow: hidden;
-    transition: height 1s;
+    transition: height 0.8s;
     transform: translate(-50%, -50%) rotate(-150deg);
     }
 
@@ -70,7 +70,7 @@
     }
 
     .hexbox > div > div{
-      background-color: #004488;
+      background-color: #bad;
       visibility: visible;
       opacity: 0.98;
     }
@@ -89,7 +89,7 @@
       top: 0px;
       left: 0px;
       width: 25vmin;
-      height: 10vmin;
+      height: 12vmin;
       overflow-x: hidden;
       overflow-y: hidden;
       transform: translate(-50%, -50%) rotate(120deg);
@@ -175,26 +175,57 @@
 
       loadOptions();
 
+      var red, green, blue;
+
+      var a = Math.floor(Math.random() * 255);
+      var b = Math.floor(Math.random() * 255);
+      var c = Math.floor(Math.random() * 255);
+
+      var mix = Math.floor(Math.random() * 3);
+
+      var ab = a + b;
+      var abc = ab + c;
+
+      if(abc > 510){
+        c = 510 - ab;
+      }
+      if(abc < 128){
+        c = 128 - ab;
+      }
+
+      var red = a;
+      var green = b;
+      var blue = c;
+
+      if(mix = 0){
+        red = c;
+        green = a;
+        blue = b;
+      }
+      if(mix = 1){
+        red = b;
+        green = a;
+        blue = c;
+      }
+
+
       hexes = document.getElementsByClassName("hexbox");
       for (i = 0; i < hexes.length; i++) {
         hexes[i].style.height = "10vmin";
       }
+
       generate();
 
-      myObj = {name: "Bob", age: 31, city: "New York"};
-      myJSON = JSON.stringify(myObj);
-      localStorage.setItem("testJSON", myJSON);
+      puffs = document.getElementsByClassName("stationary");
+      for (i = 0; i < puffs.length; i++) {
+        puffs[i].parentNode.style.backgroundColor = "rgb(" + red.toString() + ", " + green.toString() + ", " + blue.toString() + ")";
+      }
     }
 
     function loadOptions() {
         if (typeof (Storage) !== 'undefined') {
             if (localStorage.getItem('userOptions') !== null) {
                 SETTINGS = JSON.parse(localStorage.getItem('userOptions'));
-                document.body.style.backgroundColor = SETTINGS.color;
-                var c = SETTINGS.color2;
-                document.getElementById('hex1').style.backgroundColor = c;
-                document.getElementById('hex2').style.backgroundColor = c;
-                document.getElementById('hex3').style.backgroundColor = c;
             } else {
                 var defaultSettings = {
                     defaultCommand: {
@@ -216,7 +247,7 @@
       var already;
       var parentbox = caller.parentNode.parentNode;
 
-      if(parentbox.style.height === "50vmin"){
+      if(parentbox.style.height === "60vmin"){
         already = true;
       }
 
@@ -229,19 +260,19 @@
       parentbox.style.zIndex = "1";
 
       if(!already){
-        parentbox.style.height = "50vmin";
+        parentbox.style.height = "60vmin";
       }
     }
 
     function generate(){
 
-      var c2 = 9.5;
+      var c2 = 11;
       var c1 = c2 * 2;
       var c3 = 0;
       var c4 = c2 * -1;
       var c5 = c1 * -1;
 
-      var r4 = 5.5;
+      var r4 = 6.4;
       var r5 = 0;
       var r3 = 2 * r4;
       var r2 = 3 * r4;
@@ -266,12 +297,12 @@
         {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
         {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
         {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "reddit", color: "#008800"},
         {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
         {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
         {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
         {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "youtube", color: "#880000"},
         {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
         {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
         {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
@@ -396,23 +427,24 @@
         {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"}
       ];
 
-      hexes = document.getElementsByClassName('stationary');
-      for (i = 0; i < hexes.length; i++){
+      stations = document.getElementsByClassName('stationary');
+      for (i = 0; i < stations.length; i++){
         var innercontent = "";
 
         innercontent += "<img class='icon' src='" + caticons[i] + ".svg'/>";
         for (j = 0; j < 18; j++){
           innercontent += "<a href='" + hexlinks[j].trget + "'><div class='ahexbox'><div><div onmouseover='this.style.backgroundColor = this.title' onmouseout=\"this.style.backgroundColor = \'#000000\'\"></div></div></div></a>";
         }
-        hexes[i].innerHTML = innercontent;
+        stations[i].innerHTML = innercontent;
       }
 
       innerhexes = document.getElementsByClassName('ahexbox');
       for (i = 0; i < innerhexes.length; i++){
         innerhexes[i].style.top = hexlinks[i]["ycoord"] + "vmin";
         innerhexes[i].style.left = hexlinks[i]["xcoord"] + "vmin";
-        innerhexes[i].firstChild.firstChild.title = hexlinks[i].color;
+        innerhexes[i].firstChild.firstChild.title = hexlinks[i]["color"];
         innerhexes[i].firstChild.firstChild.innerHTML = "<img class='icon' src='" + hexlinks[i].icon + ".svg'/>";
+        innerhexes[i].parentNode.href = hexlinks[i]["trget"];
       }
     }
 
@@ -480,7 +512,7 @@
                             }
                             if (/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color)) {
                                 SETTINGS.color = color;
-                                setColor(color);
+                    //            setColor(color);
                                 localStorage.setItem('userOptions', JSON.stringify(SETTINGS));
                             } else {
                                 clearInput();
@@ -498,7 +530,7 @@
                             }
                             if (/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color)) {
                                 SETTINGS.color2 = color;
-                                setColor2(color);
+                      //          setColor2(color);
                                 localStorage.setItem('userOptions', JSON.stringify(SETTINGS));
                             } else {
                                 clearInput();
@@ -578,18 +610,6 @@
                 ? query.trim().replace(/ /g, '+')
                 : query.trim();
         return query;
-    }
-
-    function setColor(c) {
-        var d = document.body;
-        d.style.backgroundColor = c;
-        d.style.transition = "background-color 1s";
-    }
-
-    function setColor2(c) {
-        setr(document.getElementById('hex1'), c);
-        setr(document.getElementById('hex2'), c);
-        setr(document.getElementById('hex3'), c);
     }
 
     function setr(f, g) {

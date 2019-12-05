@@ -1,0 +1,16 @@
+<svg viewbox='0 0 300 300' version='1.1'>
+    <g>
+        <mask id='gooby' x='0' y='0' width='300' height='300'>
+            <ellipse fill='#fff' stroke-width='0' cx='150' cy='170' rx='120' ry='80'/>
+            <ellipse fill='#000' stroke-width='0' cx='110' cy='150' rx='20' ry='20'/>
+            <ellipse fill='#000' stroke-width='0' cx='190' cy='150' rx='20' ry='20'/>
+            <path d='m110,210c40,25 80,0 80,0' stroke-linecap='round' stroke-width='10' stroke='#000' fill='none'/>
+        </mask>
+        <rect fill='#fff' stroke-width='0' x='0' y='0' width='370' height='250' mask='url(#gooby)'/>
+        <ellipse fill='#000' stroke='#fff' stroke-width='10' cx='55' cy='120' rx='25' ry='25' fill-opacity='0'/>
+        <ellipse fill='#000' stroke='#fff' stroke-width='10' cx='245' cy='120' rx='25' ry='25' fill-opacity='0'/>
+        <line y2='22' x2='167' y1='94' x1='147' stroke-linecap='round' stroke-width='10' stroke='#fff' fill='none'/>
+        <line y2='48' x2='210' y1='22' x1='167' stroke-linecap='round' stroke-width='10' stroke='#fff' fill='none'/>
+        <ellipse fill='#000' stroke='#fff' stroke-width='10' cx='230' cy='55' rx='20' ry='20' fill-opacity='0'/>
+    </g>
+</svg>

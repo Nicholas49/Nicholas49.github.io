@@ -119,18 +119,18 @@
     }
 
     #searchbox{
+      z-index: 1;
+      font-size: 0;
       position: absolute;
+      width: 98%;
       left: 50%;
       top: 3vmin;
-      height: 10%;
-      width: 90%;
       transform: translate(-50%, 0%);
       text-align: center;
     }
 
-    #searchbox > input{
-      display: inline-block;
-      font-size: 43px;
+    #searchbox input{
+      font-size: 6.4vmin;
       font-family: sans-serif;
       border: 0px;
       outline: none;
@@ -138,22 +138,26 @@
       max-width: 75vw;
       background-color:#333333;
       color:#ffffff;
-      text-align:center;
+      text-align: center;
       filter: opacity(30%);
+      vertical-align: top;
     }
 
-    #searchbox > button{
-      display: inline-block;
-      background-color: #333333;
+    #searchbox button{
       border: 0px;
-      padding: 10px;
+      padding: 1px;
+      background-color: transparent;
+      height: 100%;
+      width: 12vmin;
+      font-size: 6.4vmin;
     }
 
     #searchbox img{
-      width: 30px;
+      height: 5vmin;
     }
 
   </style>
+  <script src="getdata.js"></script>
   <script>
 
 
@@ -266,166 +270,17 @@
 
     function generate(){
 
-      var c2 = 11;
-      var c1 = c2 * 2;
-      var c3 = 0;
-      var c4 = c2 * -1;
-      var c5 = c1 * -1;
-
-      var r4 = 6.4;
-      var r5 = 0;
-      var r3 = 2 * r4;
-      var r2 = 3 * r4;
-      var r1 = 4 * r4;
-      var r6 = r4 * -1;
-      var r7 = r3 * -1;
-      var r8 = r2 * -1;
-      var r9 = r1 * -1;
-
       var caticons = [
         "media",
         "net",
         "pencil",
-        "blank",
-        "blank",
-        "blank",
+        "gaming",
+        "social",
+        "news",
         "blank"
       ];
 
-      var hexlinks = [
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#444444"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "https://www.reddit.com/", icon: "reddit", color: "#008800"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "https://www.youtube.com/", icon: "youtube", color: "#880000"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
-
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#987654"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "https://www.washingtonpost.com/", icon: "washingtonpost", color: "#444444"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "https://www.stumbleupon.com/", icon: "stumbleupon", color: "#ff4000"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "https://www.newegg.com/", icon: "newegg", color: "#ffc000"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "https://www.cnn.com/", icon: "cnn", color: "#cc0000"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "https://www.busey.com/", icon: "busey", color: "#0066cc"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "https://www.wikipedia.org/", icon: "wikipedia", color: "#909090"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "https://duckduckgo.com/", icon: "duckduckgo", color: "#aa4400"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "https://www.bing.com/", icon: "bing", color: "#ddcc00"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "https://www.amazon.com/", icon: "amazon", color: "#887700"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "https://discordapp.com/", icon: "discord", color: "#663366"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "https://www.tumblr.com/", icon: "tumblr", color: "#ffaaaa"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#0077bb"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#0077ff"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#00bb00"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#00bb33"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#00bb77"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#00bbbb"},
-
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
-
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#444444"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
-
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#987654"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "https://www.washingtonpost.com/", icon: "washingtonpost", color: "#444444"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "stumbleupon", color: "#ff4000"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "newegg", color: "#ffc000"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "cnn", color: "#cc0000"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "busey", color: "#0066cc"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "wikipedia", color: "#909090"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "duckduckgo", color: "#aa4400"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "bing", color: "#ddcc00"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "amazon", color: "#887700"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "discord", color: "#663366"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "tumblr", color: "#ffaaaa"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#0077bb"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#0077ff"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#00bb00"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#00bb33"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#00bb77"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#00bbbb"},
-
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
-
-        {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
-        {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
-        {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
-        {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
-        {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"}
-      ];
+      var hexlinks = geticondata();
 
       stations = document.getElementsByClassName('stationary');
       for (i = 0; i < stations.length; i++){
@@ -621,12 +476,12 @@
   </script>
 </head>
 <body onload="loadpage()">
+  <div id="searchbox">
+    <button></button>
+    <input type="text" id="searchline" onkeypress='return verifyKey(event)' autofocus>
+    <button onclick="interpret()"><img src='search.svg'/></button>
+  </div>
   <div id="squarebox">
-    <div id="searchbox">
-        <input type="text" id="searchline" onkeypress='return verifyKey(event)' autofocus>
-        <button><img src='search.svg'/></button>
-    </div>
-
     <div class="hexbox" id="hex1">
       <div>
         <div onclick="xpand(this)">

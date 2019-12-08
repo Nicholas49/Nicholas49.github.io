@@ -1,0 +1,155 @@
+function geticondata(){
+
+  var c2 = 11;
+  var c1 = c2 * 2;
+  var c3 = 0;
+  var c4 = c2 * -1;
+  var c5 = c1 * -1;
+
+  var r4 = 6.4;
+  var r5 = 0;
+  var r3 = 2 * r4;
+  var r2 = 3 * r4;
+  var r1 = 4 * r4;
+  var r6 = r4 * -1;
+  var r7 = r3 * -1;
+  var r8 = r2 * -1;
+  var r9 = r1 * -1;
+
+  var hexlinks = [
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#444444"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "reddit", color: "#008800"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "youtube", color: "#880000"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "netflix", color: "#008800"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "fivethirtyeight", color: "#000088"},
+
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#987654"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "https://www.washingtonpost.com/", icon: "washingtonpost", color: "#444444"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "stumbleupon", color: "#ff4000"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "newegg", color: "#ffc000"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "cnn", color: "#cc0000"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "busey", color: "#0066cc"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "wikipedia", color: "#909090"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "duckduckgo", color: "#aa4400"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "bing", color: "#ddcc00"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "amazon", color: "#887700"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "discord", color: "#663366"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "tumblr", color: "#ffaaaa"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#0077bb"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#0077ff"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#00bb00"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#00bb33"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#00bb77"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "umsl", color: "#00bbbb"},
+
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "facebook", color: "#880000"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#444444"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#cc0000"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#0066cc"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#aa4400"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#987654"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#444444"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#ff4000"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#ffc000"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#cc0000"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#0066cc"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#909090"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#aa4400"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#ddcc00"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#887700"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#663366"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "tumblr", color: "#ffaaaa"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#0077bb"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#0077ff"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#00bb00"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#00bb33"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#00bb77"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "facebook", color: "#00bbbb"},
+
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"},
+
+    {linkname: "a", xcoord: c1, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "b", xcoord: c1, ycoord: r5, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "c", xcoord: c1, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "d", xcoord: c2, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "e", xcoord: c2, ycoord: r4, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "f", xcoord: c2, ycoord: r6, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "g", xcoord: c2, ycoord: r8, trget: "", icon: "blank", color: "#aa2255"},
+    {linkname: "h", xcoord: c3, ycoord: r1, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "i", xcoord: c3, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "j", xcoord: c3, ycoord: r7, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "k", xcoord: c3, ycoord: r9, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "l", xcoord: c4, ycoord: r2, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "m", xcoord: c4, ycoord: r4, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "n", xcoord: c4, ycoord: r6, trget: "", icon: "blank", color: "#000088"},
+    {linkname: "o", xcoord: c4, ycoord: r8, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "p", xcoord: c5, ycoord: r3, trget: "", icon: "blank", color: "#880000"},
+    {linkname: "q", xcoord: c5, ycoord: r5, trget: "", icon: "blank", color: "#008800"},
+    {linkname: "r", xcoord: c5, ycoord: r7, trget: "", icon: "blank", color: "#000088"}
+  ];
+
+  return hexlinks;
+}

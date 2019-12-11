@@ -1,0 +1,154 @@
+body{
+background-color: #000000;
+margin: 0px;
+padding: 0px;
+}
+
+#squarebox{
+  width: 99vmin;
+  height: 99vmin;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#hex1{
+  top: 40%;
+  left: 44%;
+}
+
+#hex2{
+  top: 50%;
+  left: 50%;
+}
+
+#hex3{
+  top: 40%;
+  left: 56%
+}
+
+#hex4{
+  top: 50%;
+  left: 38%;
+}
+
+#hex5{
+  top: 50%;
+  left: 62%;
+}
+
+#hex6{
+  top: 60%;
+  left: 44%
+}
+
+#hex7{
+  top: 60%;
+  left: 56%
+}
+
+.hexbox{
+visibility: hidden;
+position: absolute;
+width: 70vmin;
+overflow: hidden;
+transition: height 0.8s;
+transform: translate(-50%, -50%) rotate(-150deg);
+}
+
+.hexbox > div, .hexbox > div > div{
+  width: 100%;
+  height: 100%;
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+
+.hexbox > div{
+}
+
+.hexbox > div > div{
+  background-color: #bad;
+  visibility: visible;
+  opacity: 0.98;
+}
+
+.stationary{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  background-color: #660066;
+}
+
+.ahexbox{
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25vmin;
+  height: 12vmin;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translate(-50%, -50%) rotate(120deg);
+  opacity: 0.98;
+}
+
+.ahexbox > div, .ahexbox > div > div{
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.ahexbox > div > div{
+  background-color: #000000;
+  visibility: visible;
+  transition: background-color 0.3s;
+}
+
+.icon{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7vmin;
+  transform: translate(-50%, -50%);
+}
+
+#searchbox{
+  z-index: 1;
+  font-size: 0;
+  position: absolute;
+  width: 98%;
+  left: 50%;
+  top: 3vmin;
+  transform: translate(-50%, 0%);
+  text-align: center;
+}
+
+#searchbox input{
+  font-size: 6.4vmin;
+  font-family: sans-serif;
+  border: 0px;
+  outline: none;
+  background: transparent;
+  max-width: 75vw;
+  background-color:#333333;
+  color:#ffffff;
+  text-align: center;
+  filter: opacity(30%);
+  vertical-align: top;
+}
+
+#searchbox button{
+  border: 0px;
+  padding: 1px;
+  background-color: transparent;
+  height: 100%;
+  width: 12vmin;
+  font-size: 6.4vmin;
+}
+
+#searchbox img{
+  height: 5vmin;
+}

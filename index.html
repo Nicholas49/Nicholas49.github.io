@@ -4,10 +4,13 @@
   <script src="getdata.js"></script>
   <script src="functions.js"></script>
 </head>
+
 <body onload="loadpage()">
+
   <div id="searchbox">
+
     <button></button>
-    <input type="text" id="searchline" onkeypress='return verifyKey(event)' autofocus>
+    <input type="text" id="searchline" onkeypress='return verifyKey(event)' size="15" autofocus>
     <button onclick="interpret()"><img src='icons/search.svg'/></button>
   </div>
 
@@ -70,4 +73,66 @@
     </div>
 
   </div>
+
+  <div id="menu">
+
+    <table>
+      <tr>
+        <th>Command<br>(x = user input)</th>
+        <th>Site/Function</th>
+      </tr>
+      <tr>
+        <td>?</td>
+        <td>Show this menu</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Hide this menu</td>
+      </tr>
+      <tr>
+        <td>r,x</td>
+        <td>Reddit</td>
+      </tr>
+      <tr>
+        <td>g,x</td>
+        <td>Google</td>
+      </tr>
+      <tr>
+        <td>y,x</td>
+        <td>Youtube</td>
+      </tr>
+      <tr>
+        <td>a,x</td>
+        <td>Amazon</td>
+      </tr>
+      <tr>
+        <td>w,x</td>
+        <td>wikipedia</td>
+      </tr>
+      <tr>
+        <td>imdb,x</td>
+        <td>Internet Movie Database</td>
+      </tr>
+      <tr>
+        <td>wa,x</td>
+        <td>Wolfram Alpha</td>
+      </tr>
+      <tr>
+        <td>u,x</td>
+        <td>Go to url</td>
+      </tr>
+      <tr>
+        <td>x,n</td>
+        <td>Open in a new tab (stacks with other commands)</td>
+      </tr>
+    </table>
+
+    <div id="colorpicker">
+      <p>Choose Color</p>
+      <input type="color" name="favcolor" value="#ff0000" onchange="changecolor(this.value)">
+    </div>
+  </div>
+
+  <button id="menubutton" onclick="openmenu()"><img src='icons/info.svg'/></button>
+
 </body>

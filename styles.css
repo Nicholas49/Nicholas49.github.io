@@ -133,11 +133,11 @@ transform: translate(-50%, -50%) rotate(-150deg);
   outline: none;
   background: transparent;
   max-width: 75vw;
-  background-color:#333333;
   color:#ffffff;
   text-align: center;
   filter: opacity(30%);
   vertical-align: top;
+  border-bottom: 0.5vmin solid #777777;
 }
 
 #searchbox button{
@@ -145,10 +145,84 @@ transform: translate(-50%, -50%) rotate(-150deg);
   padding: 1px;
   background-color: transparent;
   height: 100%;
-  width: 12vmin;
+  width: 11vmin;
   font-size: 6.4vmin;
+  transition: background-color 0.5s;
+}
+
+#searchbox button:hover{
+  background-color: #333333;
 }
 
 #searchbox img{
   height: 5vmin;
+}
+
+#menubutton{
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  border: 0px;
+  z-index: 11;
+}
+
+#menubutton img{
+  height: 3vmin;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+#menubutton img:hover{
+  opacity: 1;
+}
+
+#menu{
+  position: absolute;
+  top: 0px;
+  left: -40%;
+  height: 100%;
+  width: 40%;
+  background-color: #333333;
+  opacity: 0.98;
+  z-index: 11;
+  transition: left 0.5s;
+}
+
+#menu table{
+  position: relative;
+  top: 5vmin;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+
+#menu table{
+  border-collapse: collapse;
+  border: 0px;
+  width: 100%;
+}
+
+#menu table td{
+  padding: 1vmin;
+}
+
+#menu table tr:nth-child(even){
+  background-color: #222222;
+}
+
+#colorpicker{
+  position:relative;
+  top: 5vmin;
+  color: #ffffff;
+  text-align: center;
+}
+
+#colorpicker > input{
+  border: 0px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
 }

@@ -1,5 +1,5 @@
 var commands = [
-    {command: 'g', url: 'https://duckduckgo.com', search: '/?q='},
+    {command: 'd', url: 'https://duckduckgo.com', search: '/?q='},
     {command: 'r', url: 'https://www.reddit.com', search: '/r/'},
     {command: 'y', url: 'https://www.youtube.com', search: '/results?search_query='},
     {command: 'a', url: 'https://smile.amazon.com', search: '/s/?field-keywords='},
@@ -7,14 +7,20 @@ var commands = [
     {command: 'wa', url: 'https://www.wolframalpha.com', search: '/input/?i='},
     {command: 'imdb', url: 'https://www.imdb.com', search: '/find?s=all&q='},
     {command: 'img', url: 'https://www.google.com', search: '/search?tbm=isch&q='},
-    {command: 't', url: '', search: ''},
-    {command: 'c', url: '', search: ''},
-    {command: 'c2', url: '', search: ''}];
+    {command: 'u', url: '', search: ''}];
+
+var defaultSettings = {
+  defaultCommand: {
+    command: 'd',
+    url: 'https://duckduckgo.com',
+    search: '/?q='
+  },
+  alwaysNewTab: false,
+  color: "#111"
+};
 
 
   function loadpage(){
-
-    loadOptions();
 
     var red, green, blue;
 
@@ -57,30 +63,10 @@ var commands = [
 
     generate();
 
-    puffs = document.getElementsByClassName("stationary");
+  puffs = document.getElementsByClassName("stationary");
     for (i = 0; i < puffs.length; i++) {
       puffs[i].parentNode.style.backgroundColor = "rgb(" + red.toString() + ", " + green.toString() + ", " + blue.toString() + ")";
     }
-  }
-
-  function loadOptions() {
-      if (typeof (Storage) !== 'undefined') {
-          if (localStorage.getItem('userOptions') !== null) {
-              SETTINGS = JSON.parse(localStorage.getItem('userOptions'));
-          } else {
-              var defaultSettings = {
-                  defaultCommand: {
-                      command: 'd',
-                      url: 'https://duckduckgo.com',
-                      search: '/?q='
-                  },
-                  alwaysNewTab: false,
-                  color: "#111"
-              };
-              localStorage.setItem('userOptions', JSON.stringify(defaultSettings));
-              SETTINGS = JSON.parse(localStorage.getItem('userOptions'));
-          }
-      }
   }
 
   function xpand(caller) {
@@ -114,7 +100,7 @@ var commands = [
       "gaming",
       "social",
       "news",
-      "blank"
+      "commerce"
     ];
 
     var hexlinks = geticondata();
@@ -150,6 +136,7 @@ var commands = [
       }
       if (keycode === 13) {
           interpret();
+          clearInput();
       }
       checkInputLength();
   }
@@ -157,10 +144,10 @@ var commands = [
 
   function checkInputLength() {
       var input = document.getElementById('searchline');
-      if (input.value.length > 20) {
+      if (input.value.length > 15) {
           input.size = input.value.length + 1;
       } else {
-          input.size = 20;
+          input.size = 15;
       }
   }
 
@@ -169,90 +156,43 @@ var commands = [
       inputBox.select();
       var input = inputBox.value.trim();
       if (input === '') {
-  //        raiseheqs();
-          return;
-      }
-      if (input === 'help' || input === '?') {
-//          displayHelpMenu();
           return;
       }
       var inputArr = input.split(',');
       var newtab = (inputArr[inputArr.length - 1] === 'n');
       var command;
       var query;
-      var validCommand = false;
       command = getFullCommand(inputArr[0]);
       if (command !== null) {
-          validCommand = true;
-      }
-      if (validCommand) {
-          isearch = true;
-          switch (inputArr.length) {
-              case 1:
-                  redirect(command.url, newtab);
-                  return false;
-                  break;
-              case 2:
-                  query = queryFix(command, inputArr[1]);
-                  if (inputArr[0] === 'c') {
-                      if (typeof (Storage) === "undefined") {
-                          alert("Browser does not support local storage: your settings won't be saved (sorry)");
-                      } else {
-                          var color = inputArr[1];
-                          if (!color.startsWith('#')) {
-                              color = '#' + color;
-                          }
-                          if (/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color)) {
-                              SETTINGS.color = color;
-                  //            setColor(color);
-                              localStorage.setItem('userOptions', JSON.stringify(SETTINGS));
-                          } else {
-                              clearInput();
-                              alert('not a valid hex value');
-                              return false;
-                          }
-                      }
-                      clearInput();
-                      isearch = false;
-                  } else {
-                      if (inputArr[0] === 'c2') {
-                          var color = inputArr[1];
-                          if (!color.startsWith('#')) {
-                              color = '#' + color;
-                          }
-                          if (/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color)) {
-                              SETTINGS.color2 = color;
-                    //          setColor2(color);
-                              localStorage.setItem('userOptions', JSON.stringify(SETTINGS));
-                          } else {
-                              clearInput();
-                              alert('not a valid hex value');
-                              return false;
-                          }
-                          clearInput();
-                          isearch = false;
-                      } else {
-                          if (inputArr[1] === 'n') {
-                              redirect(command.url, newtab);
-                              return false;
-                          } else {
-                              redirect(command.url + command.search + query, newtab);
-                              return false;
-                          }
-                      }
-                  }
-              break;
-          default:
-              query = queryFix(command, inputArr[1]);
-              redirect(command.url + command.search + query, newtab);
+        switch (inputArr.length) {
+          case 1:
+            redirect(command.url, newtab);
+            return false;
+            break;
+          case 2:
+            query = queryFix(command, inputArr[1]);
+            if (inputArr[1] === 'n') {
+              redirect(command.url, newtab);
               return false;
-          }
-          if (isearch === true) {
+            } else {
               redirect(command.url + command.search + query, newtab);
-          }
-          return false;
+            return false;
+            }
+            break;
+          default:
+            query = queryFix(command, inputArr[1]);
+            redirect(command.url + command.search + query, newtab);
+            return false;
+        }
       } else {
-          command = SETTINGS.defaultCommand;
+
+          if (inputArr.length === 1 && newtab){
+            var win = window.open(document.URL);
+            win.focus();
+            return false;
+          }
+
+          command = defaultSettings.defaultCommand;
           query = queryFix(command, inputArr[0]);
           redirect(command.url + command.search + query, newtab);
           return false;
@@ -278,7 +218,7 @@ var commands = [
       url = (!url.startsWith('http'))
           ? 'https://' + url
           : url;
-      if (newtab || SETTINGS.alwaysNewTab) {
+      if (newtab) {
           var win = window.open(url);
           win.focus();
           return false;
@@ -312,4 +252,21 @@ var commands = [
   function unsetr(link){
     link.style.backgroundColor = "#000000";
     link.style.transition = "background-color 2s";
+  }
+
+  function openmenu(){
+    var menu = document.getElementById("menu");
+    if(menu.style.left === "0%"){
+      menu.style.left = "-40%";
+    }
+    else{
+      menu.style.left = "0%";
+    }
+  }
+
+  function changecolor(c){
+    puffs = document.getElementsByClassName("stationary");
+    for(i = 0; i < puffs.length; i++){
+      puffs[i].parentNode.style.backgroundColor = c;
+    }
   }

@@ -13,7 +13,7 @@ function geticondata(){
   var hexlinks = [
     //media
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
-    {xcoord: col[1], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[1], ycoord: row[5], color: "#F7991C", icon: "audible", trget: "https://www.audible.com/"},
     {xcoord: col[1], ycoord: row[7], color: "#1BB76E", icon: "imgur", trget: "https://imgur.com/"},
     {xcoord: col[2], ycoord: row[2], color: "#F64D6A", icon: "instagram", trget: "https://www.instagram.com/"},
     {xcoord: col[2], ycoord: row[4], color: "#3668ff", icon: "pandora", trget: "https://www.pandora.com/"},
@@ -46,7 +46,7 @@ function geticondata(){
     {xcoord: col[4], ycoord: row[4], color: "#2C546B", icon: "busey", trget: "https://www.busey.com/"},
     {xcoord: col[4], ycoord: row[6], color: "#981E32", icon: "umsl", trget: "https://www.umsl.edu/"},
     {xcoord: col[4], ycoord: row[8], color: "#CE342A", icon: "gmail", trget: "https://mail.google.com/mail/"},
-    {xcoord: col[5], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[5], ycoord: row[3], color: "#78B942", icon: "timeanddate", trget: "https://www.timeanddate.com/"},
     {xcoord: col[5], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[5], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},
     //creation
@@ -61,7 +61,7 @@ function geticondata(){
     {xcoord: col[3], ycoord: row[3], color: "#4CAF50", icon: "w3schools", trget: "https://www.w3schools.com/"},
     {xcoord: col[3], ycoord: row[7], color: "#24386E", icon: "vitalsource", trget: "https://www.vitalsource.com/"},
     {xcoord: col[3], ycoord: row[9], color: "#000000", icon: "blank", trget: ""},
-    {xcoord: col[4], ycoord: row[2], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[4], ycoord: row[2], color: "#DB1F29", icon: "adobe", trget: ""},
     {xcoord: col[4], ycoord: row[4], color: "#5C93CE", icon: "launchcode", trget: "https://www.launchcode.org/"},
     {xcoord: col[4], ycoord: row[6], color: "#EB3C03", icon: "office", trget: "https://www.office.com/"},
     {xcoord: col[4], ycoord: row[8], color: "#000000", icon: "blank", trget: ""},
@@ -71,7 +71,7 @@ function geticondata(){
     //gaming
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[1], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
-    {xcoord: col[1], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[1], ycoord: row[7], color: "#0566B0", icon: "blizzard", trget: "https://www.blizzard.com/"},
     {xcoord: col[2], ycoord: row[2], color: "#FF2E00", icon: "gamespot", trget: "https://www.gamespot.com/"},
     {xcoord: col[2], ycoord: row[4], color: "#440044", icon: "discord", trget: "https://discordapp.com/"},
     {xcoord: col[2], ycoord: row[6], color: "#cc00aa", icon: "pcgamingwiki", trget: "https://www.pcgamingwiki.com/wiki/Home"},
@@ -79,7 +79,7 @@ function geticondata(){
     {xcoord: col[3], ycoord: row[1], color: "#D51D29", icon: "ign", trget: "https://www.ign.com/"},
     {xcoord: col[3], ycoord: row[3], color: "#333333", icon: "steam", trget: "https://store.steampowered.com/"},
     {xcoord: col[3], ycoord: row[7], color: "#FAA740", icon: "nexus", trget: "https://www.nexusmods.com/"},
-    {xcoord: col[3], ycoord: row[9], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[3], ycoord: row[9], color: "#313131", icon: "epicgames", trget: "https://www.epicgames.com/site/"},
     {xcoord: col[4], ycoord: row[2], color: "#000099", icon: "escapistmagazine", trget: "https://www.escapistmagazine.com/v2/"},
     {xcoord: col[4], ycoord: row[4], color: "#593E85", icon: "twitch", trget: "https://www.twitch.tv/"},
     {xcoord: col[4], ycoord: row[6], color: "#D70252", icon: "polygon", trget: "https://www.polygon.com/"},
@@ -109,7 +109,7 @@ function geticondata(){
     //news
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[1], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
-    {xcoord: col[1], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[1], ycoord: row[7], color: "#126FB5", icon: "pbs", trget: "https://www.pbs.org/"},
     {xcoord: col[2], ycoord: row[2], color: "#444444", icon: "bbc", trget: "https://www.bbc.com/"},
     {xcoord: col[2], ycoord: row[4], color: "#EC6E3B", icon: "fivethirtyeight", trget: "https://fivethirtyeight.com/"},
     {xcoord: col[2], ycoord: row[6], color: "#CC0000", icon: "cnn", trget: "https://www.cnn.com/"},
@@ -129,7 +129,7 @@ function geticondata(){
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[1], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[1], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},
-    {xcoord: col[2], ycoord: row[2], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[2], ycoord: row[2], color: "#FF5900", icon: "patreon", trget: "https://www.patreon.com/"},
     {xcoord: col[2], ycoord: row[4], color: "#39538C", icon: "bestbuy", trget: "https://www.bestbuy.com/"},
     {xcoord: col[2], ycoord: row[6], color: "#006CB7", icon: "paypal", trget: "https://www.paypal.com/"},
     {xcoord: col[2], ycoord: row[8], color: "#000000", icon: "blank", trget: ""},

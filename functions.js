@@ -22,7 +22,7 @@ var defaultSettings = {
 
   function loadpage(){
 
-    document.body.style.backgroundColor = randomColor(1);
+//    document.body.style.backgroundColor = randomColor(1);
 
     hexes = document.getElementsByClassName("hexbox");
     for (i = 0; i < hexes.length; i++) {

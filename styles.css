@@ -52,7 +52,7 @@ visibility: hidden;
 position: absolute;
 width: 70vmin;
 overflow: hidden;
-transition: height 0.8s;
+transition: height 0.7s;
 transform: translate(-50%, -50%) rotate(-150deg);
 }
 
@@ -83,13 +83,10 @@ transform: translate(-50%, -50%) rotate(-150deg);
 .ahexbox{
   visibility: hidden;
   position: absolute;
-  top: 0px;
-  left: 0px;
   width: 25vmin;
   height: 12vmin;
   overflow-x: hidden;
   overflow-y: hidden;
-  transform: translate(-50%, -50%) rotate(120deg);
   opacity: 0.98;
 }
 
@@ -109,8 +106,12 @@ transform: translate(-50%, -50%) rotate(-150deg);
 
 .icon{
   position: absolute;
-  left: 50%;
-  top: 50%;
+  width: 7vmin;
+  transform: translate(130%, 40%);
+}
+
+.ikon{
+  position: absolute;
   width: 7vmin;
   transform: translate(-50%, -50%);
 }

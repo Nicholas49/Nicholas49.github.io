@@ -22,39 +22,7 @@ var defaultSettings = {
 
   function loadpage(){
 
-    var red, green, blue;
-
-    var a = Math.floor(Math.random() * 255);
-    var b = Math.floor(Math.random() * 255);
-    var c = Math.floor(Math.random() * 255);
-
-    var mix = Math.floor(Math.random() * 3);
-
-    var ab = a + b;
-    var abc = ab + c;
-
-    if(abc > 510){
-      c = 510 - ab;
-    }
-    if(abc < 128){
-      c = 128 - ab;
-    }
-
-    var red = a;
-    var green = b;
-    var blue = c;
-
-    if(mix = 0){
-      red = c;
-      green = a;
-      blue = b;
-    }
-    if(mix = 1){
-      red = b;
-      green = a;
-      blue = c;
-    }
-
+    document.body.style.backgroundColor = randomColor(1);
 
     hexes = document.getElementsByClassName("hexbox");
     for (i = 0; i < hexes.length; i++) {
@@ -63,9 +31,11 @@ var defaultSettings = {
 
     generate();
 
+    var hexcolor = randomColor(5);
+
   puffs = document.getElementsByClassName("stationary");
     for (i = 0; i < puffs.length; i++) {
-      puffs[i].parentNode.style.backgroundColor = "rgb(" + red.toString() + ", " + green.toString() + ", " + blue.toString() + ")";
+      puffs[i].parentNode.style.backgroundColor = hexcolor;
     }
   }
 
@@ -93,15 +63,7 @@ var defaultSettings = {
 
   function generate(){
 
-    var caticons = [
-      "media",
-      "net",
-      "pencil",
-      "gaming",
-      "social",
-      "news",
-      "commerce"
-    ];
+    var caticons = ["media", "net", "pencil", "gaming", "social", "news", "commerce"];
 
     var hexlinks = geticondata();
 
@@ -109,20 +71,21 @@ var defaultSettings = {
     for (i = 0; i < stations.length; i++){
       var innercontent = "";
 
-      innercontent += "<img class='icon' src='icons/" + caticons[i] + ".svg'/>";
+      innercontent += "<img class='ikon' src='icons/" + caticons[i] + ".svg'/>";
       for (j = 0; j < 18; j++){
-        innercontent += "<a href='" + hexlinks[j].trget + "'><div class='ahexbox'><div><div onmouseover=\"setr(this, this.title)\" onmouseout=\"unsetr(this)\"></div></div></div></a>";
+        innercontent += "<a href='" + hexlinks[j].trget + "'><div class='ahexbox'><div><div onmouseover=\"setr(this, this.id)\" onmouseout=\"unsetr(this)\"></div></div></div></a>";
       }
       stations[i].innerHTML = innercontent;
     }
 
     innerhexes = document.getElementsByClassName('ahexbox');
     for (i = 0; i < innerhexes.length; i++){
-      innerhexes[i].style.top = hexlinks[i]["ycoord"] + "vmin";
-      innerhexes[i].style.left = hexlinks[i]["xcoord"] + "vmin";
-      innerhexes[i].firstChild.firstChild.title = hexlinks[i]["color"];
-      innerhexes[i].firstChild.firstChild.innerHTML = "<img class='icon' src='icons/" + hexlinks[i].icon + ".svg'/>";
-      innerhexes[i].parentNode.href = hexlinks[i]["trget"];
+      innerhexes[i].style.transform = "translate(" + hexlinks[i]["xcoord"] + "vmin, " + hexlinks[i]["ycoord"] + "vmin) rotate(120deg)";
+      innerhexes[i].parentNode.href = hexlinks[i].trget;
+      backhex = innerhexes[i].firstChild.firstChild;
+      backhex.title = hexlinks[i].icon;
+      backhex.id = hexlinks[i].color;
+      backhex.innerHTML = "<img class='icon' src='icons/" + hexlinks[i].icon + ".svg'/>";
     }
   }
 
@@ -155,8 +118,12 @@ var defaultSettings = {
       var inputBox = document.getElementById('searchline');
       inputBox.select();
       var input = inputBox.value.trim();
-      if (input === '') {
-          return;
+      if (input === ''){
+        return;
+      }
+      if (input === 'i') {
+        openmenu();
+        return;
       }
       var inputArr = input.split(',');
       var newtab = (inputArr[inputArr.length - 1] === 'n');
@@ -262,6 +229,24 @@ var defaultSettings = {
     else{
       menu.style.left = "0%";
     }
+  }
+
+  function randomColor(x){
+
+    var r = Math.floor(Math.random() * 51 * x);
+    var g = Math.floor(Math.random() * 51 * x);
+    var b = Math.floor(Math.random() * 51 * x);
+
+    var rgb = r + g + b;
+
+    if(rgb > 102 * x){
+      g = (102 * x) - r - b;
+    }
+    if(rgb < 24 * x){
+      b = (24 * x) - r - g;
+    }
+
+    return "rgb(" + r.toString() + ", " + g.toString() + ", " + b.toString() + ")";
   }
 
   function changecolor(c){

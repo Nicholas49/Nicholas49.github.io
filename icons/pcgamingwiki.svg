@@ -5,9 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg20"
    version="1.1"
-   viewBox="0 0 300 300">
+   viewBox="0 0 300 300"
+   sodipodi:docname="pcgamingwiki.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="970"
+     inkscape:window-height="835"
+     id="namedview9"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="143.13382"
+     inkscape:cy="149.25494"
+     inkscape:window-x="935"
+     inkscape:window-y="88"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg20" />
   <metadata
      id="metadata26">
     <rdf:RDF>
@@ -24,15 +50,17 @@
      id="defs24" />
   <path
      id="rect833"
-     d="M 159.32431,4.7362717 V 296.31781 l 82.09357,-14.96439 V 17.686688 Z M 147.84872,6.2512002 42.908693,45.037843 V 258.08812 l 104.940027,37.04002 z m 22.69943,52.3118398 61.368,5.703263 v 17.909583 l -61.368,-4.44899 z m 38.21186,48.0901 a 12.239202,20.018453 0 0 1 11.20825,10.21462 l 10.19681,0.28071 v 19.527 l -10.27032,-0.0378 a 12.239202,20.018453 0 0 1 -10.42851,10.04086 12.239202,20.018453 0 0 1 -10.79833,-10.11884 l -27.19519,-0.10023 v -20.93275 l 27.36228,0.75523 a 12.239202,20.018453 0 0 1 9.92501,-9.6287 z m -12.84348,68.20077 v 100.8319 l -18.70715,2.96748 V 175.65147 Z"
-     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+     d="M 154.67241,60.328973 V 242.32534 l 51.24032,-9.34031 V 68.412231 Z m -7.16271,0.945572 -65.500399,24.20945 V 218.46353 l 65.500399,23.11926 z m 14.16829,32.651468 38.30405,3.559804 v 11.178613 l -38.30405,-2.77692 z m 23.85069,30.016387 a 7.6393396,12.494913 0 0 1 6.99584,6.37565 l 6.36454,0.17521 v 12.18816 l -6.41042,-0.0236 a 7.6393396,12.494913 0 0 1 -6.50916,6.2672 7.6393396,12.494913 0 0 1 -6.73999,-6.31587 l -16.97441,-0.0625 v -13.06558 l 17.07871,0.47139 a 7.6393396,12.494913 0 0 1 6.19489,-6.00994 z m -8.01652,42.56885 v 62.93622 l -11.67643,1.85221 v -64.29062 z"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     inkscape:connector-curvature="0" />
   <g
      id="g16"
-     transform="matrix(1.1406525,0,0,1.1406525,-31.347342,-882.0186)">
+     transform="matrix(0.71196078,0,0,0.71196078,35.660931,-493.1566)">
     <path
        id="path14"
        d="m 218.4,884.42 a 7.1,11.9 0 0 1 -7,11.87 7.07,11.87 0 0 1 -7.17,-11.52 7.071,11.87 0 0 1 6.76,-12.2 7.071,11.87 0 0 1 7.37,11.17"
-       style="fill:#ffffff;stroke-width:0" />
+       style="fill:#ffffff;stroke-width:0"
+       inkscape:connector-curvature="0" />
   </g>
   <svg
      id="svg18"

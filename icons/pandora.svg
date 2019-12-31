@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="pandora.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="853"
+     inkscape:window-height="832"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.5733333"
+     inkscape:cx="143.95309"
+     inkscape:cy="155.42153"
+     inkscape:window-x="983"
+     inkscape:window-y="148"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,12 +51,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.48495032,0,0,0.48495032,20.693286,-84.819356)"
      id="layer1">
     <path
        id="path812"
        transform="matrix(0.26458333,0,0,0.26458333,0,217.62499)"
-       d="M 150 5 A 145 145 0 0 0 5 150 A 145 145 0 0 0 150 295 A 145 145 0 0 0 295 150 A 145 145 0 0 0 150 5 z M 85.5 59.5 L 168 59.5 C 212.63355 59.5 237.79527 88.161229 237.31055 126.9707 C 236.70174 175.71493 196.69608 197.80078 168 197.80078 L 141.5 197.80078 L 141.5 231.42773 C 141.5 239.73684 136.58441 241.49577 132.14258 241.42773 L 85.5 240.71484 L 85.5 59.5 z "
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+       d="M 150,5 A 145,145 0 0 0 5,150 145,145 0 0 0 150,295 145,145 0 0 0 295,150 145,145 0 0 0 150,5 Z M 85.5,59.5 H 168 c 44.63355,0 69.79527,28.661229 69.31055,67.4707 -0.60881,48.74423 -40.61447,70.83008 -69.31055,70.83008 h -26.5 v 33.62695 c 0,8.30911 -4.91559,10.06804 -9.35742,10 L 85.5,240.71484 Z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

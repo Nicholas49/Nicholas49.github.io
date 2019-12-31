@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="deviantart.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="921"
+     inkscape:window-height="846"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.5733333"
+     inkscape:cx="139.69926"
+     inkscape:cy="157.44002"
+     inkscape:window-x="975"
+     inkscape:window-y="126"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,11 +51,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.68979388,0,0,0.68979388,12.582197,-138.58499)"
      id="layer1">
     <path
        id="path823"
        d="m 15.388705,288.54309 v -6.95202 l 7.008032,-13.39061 c 6.023756,-11.50989 6.991977,-13.41167 6.893747,-13.54059 -0.06286,-0.0825 -0.331177,-0.4025 -0.596256,-0.71113 l -0.481956,-0.56113 h -6.411785 -6.411782 v -9.51684 -9.51683 l 11.694035,-0.005 11.694036,-0.005 1.066038,-0.73617 1.066038,-0.73617 3.267956,-6.23981 3.267946,-6.23981 0.691668,-0.69581 0.691667,-0.69581 h 6.937719 6.937728 v 6.9718 6.9718 l -7.001805,13.37649 -7.001814,13.3765 0.559994,0.70023 0.559985,0.70024 6.44182,0.005 6.44182,0.005 v 9.51683 9.51684 H 51.031254 39.358973 l -1.065563,0.72955 -1.065562,0.72955 -3.252459,6.20607 -3.252468,6.20606 -0.729511,0.7407 -0.729501,0.7407 h -6.937604 -6.9376 v -6.95203 z"
-       style="fill:#ffffff;stroke-width:0.08978146;fill-opacity:1" />
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.08978146"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

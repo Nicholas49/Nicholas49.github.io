@@ -12,7 +12,7 @@
    viewBox="0 0 79.374998 79.375002"
    height="300"
    width="300"
-   sodipodi:docname="maps.svg"
+   sodipodi:docname="digg.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -23,17 +23,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="894"
+     inkscape:window-width="962"
+     inkscape:window-height="893"
      id="namedview7"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
      inkscape:zoom="2.2250293"
-     inkscape:cx="134.33904"
-     inkscape:cy="150.20902"
-     inkscape:window-x="953"
-     inkscape:window-y="100"
+     inkscape:cx="149.36942"
+     inkscape:cy="147.98116"
+     inkscape:window-x="951"
+     inkscape:window-y="45"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
   <defs
@@ -51,13 +51,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.55282906,0,0,0.55282906,17.78674,-103.72531)"
+     transform="matrix(0.58014022,0,0,0.58014022,16.435241,-110.75993)"
      id="layer1">
     <path
-       id="path847"
+       id="rect842"
        transform="matrix(0.26458333,0,0,0.26458333,0,217.62499)"
-       d="M 150,5.5019531 C 82.325934,6.4181862 26.083898,76.197689 60,147.97266 c 8.458847,17.90105 90,148.49218 90,148.49218 0,0 65.66124,-100.10983 90,-145.66406 C 279.24737,77.342488 220.50189,4.5474334 150,5.5019531 Z m 0,63.1347659 a 34.999998,34.999998 0 0 1 35,35.000001 34.999998,34.999998 0 0 1 -35,35 34.999998,34.999998 0 0 1 -35,-35 34.999998,34.999998 0 0 1 35,-35.000001 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 52.4375,67.542969 V 103.83594 H 3.4394531 v 105.2539 H 83.287109 V 67.542969 Z m 39.923828,0 v 21.77539 h 30.849612 v -21.77539 z m 0,36.292971 -0.503906,105.2539 h 31.353518 v -105.2539 z m 39.921872,0 v 105.2539 h 48.99805 v 10.88868 H 132.2832 v 23.59179 h 78.03321 V 103.83594 Z m 87.10742,0 v 105.2539 h 48.9961 v 10.88868 h -48.9961 v 23.59179 h 78.03126 V 103.83594 Z M 32.474609,127.42773 H 52.4375 v 58.07032 H 32.474609 Z m 128.845701,0 h 19.96094 v 58.07032 h -19.96094 z m 87.10547,0 h 19.96094 v 58.07032 h -19.96094 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

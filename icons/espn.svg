@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="espn.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="962"
+     inkscape:window-height="923"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="139.92386"
+     inkscape:cy="149.65054"
+     inkscape:window-x="945"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,11 +51,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.4871426,0,0,0.4871426,20.821818,-86.02328)"
      id="layer1">
     <path
        id="path823"
        d="m 64.566476,290.44598 1.90815,-17.14553 -35.175939,-0.36578 0.66239,-6.42094 35.743543,-0.31682 1.630274,-15.33166 -57.073298,0.20789 -5.0501406,39.33535 57.3550256,0.0375 z m 5.722608,-45.97214 2.298419,-18.3475 -57.211466,-0.12728 -2.461651,18.46908 57.374698,0.006 z"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.31682974" />
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.31682974"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

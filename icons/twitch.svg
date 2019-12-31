@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="twitch.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="971"
+     inkscape:window-height="894"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="151.87119"
+     inkscape:cy="150"
+     inkscape:window-x="936"
+     inkscape:window-y="94"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,12 +51,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.49798843,0,0,0.49798843,20.395064,-88.418997)"
      id="layer1">
     <path
        id="path823"
        transform="matrix(0.26458333,0,0,0.26458333,0,217.62499)"
-       d="M 33 7 L 14 57 L 13.888672 260 L 83 260 L 83 298 L 121 298 L 159.09961 260 L 215.91992 260 L 292 184.08594 L 292 7 L 33 7 z M 58 32 L 267 32 L 266.07227 171.42773 L 222.5 216 L 152.85742 216 L 115 253.21484 L 115 216 L 58 216 L 58 32 z M 127.5 83 L 127.5 159 L 152.75 159 L 152.75 83 L 127.5 83 z M 196.44336 83 L 196.44336 159 L 221.69336 159 L 221.69336 83 L 196.44336 83 z "
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       d="M 33,7 14,57 13.888672,260 H 83 v 38 h 38 l 38.09961,-38 h 56.82031 L 292,184.08594 V 7 Z M 58,32 H 267 L 266.07227,171.42773 222.5,216 H 152.85742 L 115,253.21484 V 216 H 58 Z m 69.5,51 v 76 h 25.25 V 83 Z m 68.94336,0 v 76 h 25.25 V 83 Z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

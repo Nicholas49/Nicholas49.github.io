@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="300"
    width="300"
    id="svg18"
    version="1.1"
-   viewbox="0 0 300 300">
+   viewbox="0 0 300 300"
+   sodipodi:docname="comedycentral.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1051"
+     inkscape:window-height="773"
+     id="namedview8"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.5733333"
+     inkscape:cx="188.0171"
+     inkscape:cy="140.9079"
+     inkscape:window-x="791"
+     inkscape:window-y="109"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg18" />
   <metadata
      id="metadata24">
     <rdf:RDF>
@@ -25,15 +51,17 @@
   <defs
      id="defs22" />
   <g
-     transform="translate(-47.457627,166.10169)"
+     transform="matrix(0.64720059,0,0,0.64720059,26.882217,159.96978)"
      id="g16">
     <path
        id="ellipse4"
        d="M 187.3795,-156.10169 A 140,140 0 0 0 68.887314,-90.347781 l 31.382816,15.691406 a 105,105 0 0 1 87.10937,-46.445315 105,105 0 0 1 105,105 105,105 0 0 1 -105,105 A 105,105 0 0 1 97.436142,37.86316 L 67.457627,55.85144 a 140,140 0 0 0 119.921873,68.04687 140,140 0 0 0 140,-140 140,140 0 0 0 -140,-140 z"
-       style="fill:#ffffff;stroke-width:0" />
+       style="fill:#ffffff;stroke-width:0"
+       inkscape:connector-curvature="0" />
     <path
        id="ellipse10"
        d="m 187.3795,-86.101688 a 70,70 0 0 0 -70,69.999998 70,70 0 0 0 70,70 A 70,70 0 0 0 246.66661,20.953 L 217.02208,2.4256598 A 35,35 0 0 1 187.3795,18.89831 a 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-34.999998 35,35 0 0 1 29.66406,16.460938 l 29.66406,-18.541016 A 70,70 0 0 0 187.3795,-86.101688 Z"
-       style="fill:#ffffff;stroke-width:0" />
+       style="fill:#ffffff;stroke-width:0"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

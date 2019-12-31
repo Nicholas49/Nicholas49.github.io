@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="300"
    height="300"
    viewBox="0 0 79.374998 79.375002"
    version="1.1"
-   id="svg8">
+   id="svg8"
+   sodipodi:docname="yahoo.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="958"
+     inkscape:window-height="877"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="150"
+     inkscape:cy="150"
+     inkscape:window-x="951"
+     inkscape:window-y="110"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -26,10 +52,11 @@
   </metadata>
   <g
      id="layer1"
-     transform="matrix(0.75272465,0,0,0.75272465,9.6843305,-153.17965)">
+     transform="matrix(0.43877428,0,0,0.43877428,22.570959,-73.822407)">
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#e9e9e9;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 21.295373,295.98599 29.778639,276.45448 6.4668447,219.24607 H 28.518546 l 11.970924,32.6365 12.60097,-32.6365 H 73.251999 L 41.60325,295.98599 Z"
-       id="path823" />
+       id="path823"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

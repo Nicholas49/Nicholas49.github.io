@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="adobe.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="787"
+     inkscape:window-height="776"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.5733333"
+     inkscape:cx="177.53005"
+     inkscape:cy="207.3477"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,11 +51,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.65245965,0,0,0.65245965,13.680895,-128.28868)"
      id="layer1">
     <path
        id="rect825"
-       d="m 0.52916717,223.07049 0.2833561,68.83175 28.85218973,-68.83175 z m 63.87301883,0 c -7.944007,0 -14.445793,0.10832 -14.448035,0.24072 -0.0087,0.51803 28.665546,68.44436 28.891682,68.44559 v -68.68631 z m -24.709669,25.6776 -12.705017,29.85013 13.507441,6e-5 5.401947,13.80171 h 12.38242 z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+       d="M 6.963214,228.09015 7.2027752,286.28346 31.59565,228.09015 Z m 41.785995,6e-5 c 0,0 24.235077,58.06925 24.426262,58.07029 v -58.07035 z m -8.675625,21.70889 -10.741364,25.23657 11.419768,6e-5 4.567037,11.66855 h 10.468627 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccc" />
   </g>
 </svg>

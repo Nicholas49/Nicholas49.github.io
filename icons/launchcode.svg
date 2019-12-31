@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    height="300"
    width="300"
    id="svg18"
    version="1.1"
-   viewBox="0 0 300 300">
+   viewBox="0 0 300 300"
+   sodipodi:docname="launchcode.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="883"
+     inkscape:window-height="690"
+     id="namedview13"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="1.5733333"
+     inkscape:cx="138.11963"
+     inkscape:cy="155.03448"
+     inkscape:window-x="856"
+     inkscape:window-y="187"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g16" />
   <metadata
      id="metadata24">
     <rdf:RDF>
@@ -26,19 +52,22 @@
      id="defs22" />
   <g
      id="g16"
-     transform="matrix(0.83120798,0,0,0.83120798,-0.71213181,-1.2753844)">
+     transform="matrix(0.71306806,0,0,0.71306806,20.902858,25.226631)">
     <path
        id="path2"
        style="fill:none;stroke:#ffffff;stroke-width:11;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4"
-       d="m 180.06,11.36 c 0,0 -63.82,51 -42.73,122.79 21.08,71.8 43.02,135.9 43.02,135.9 l 45.3,-145.3 c 0,0 14.245,-61.54 -45.58,-113.39 z" />
+       d="m 180.06,11.36 c 0,0 -63.82,51 -42.73,122.79 21.08,71.8 43.02,135.9 43.02,135.9 l 45.3,-145.3 c 0,0 14.245,-61.54 -45.58,-113.39 z"
+       inkscape:connector-curvature="0" />
     <path
        id="path4"
        style="fill:none;stroke:#ffffff;stroke-width:11.19999981;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4"
-       d="m 134.76,117.06 -23.65,35.33 15.95,58.975 23.65,-34.47" />
+       d="m 134.76,117.06 -23.65,35.33 15.95,58.975 23.65,-34.47"
+       inkscape:connector-curvature="0" />
     <path
        id="path6"
        style="fill:none;stroke:#ffffff;stroke-width:11.19999981;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4"
-       d="m 227.07,119.62 21.94,32.76 -16.24,58.97 -23.65,-33.62" />
+       d="m 227.07,119.62 21.94,32.76 -16.24,58.97 -23.65,-33.62"
+       inkscape:connector-curvature="0" />
     <ellipse
        id="ellipse8"
        style="fill:none;stroke:#ffffff;stroke-width:11.10000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4"
@@ -49,14 +78,17 @@
     <path
        id="path10"
        style="fill:none;stroke:#ffffff;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
-       d="m 156.41,190.56 47.01,-0.28" />
+       d="m 156.41,190.56 47.01,-0.28"
+       inkscape:connector-curvature="0" />
     <path
        id="path12"
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0"
-       d="m 170.37,191.42 9.97,32.76 9.4,-34.19" />
+       d="m 170.37,191.42 9.97,32.76 9.4,-34.19"
+       inkscape:connector-curvature="0" />
     <path
        id="path14"
        style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
-       d="m 92.31,347.26 177.5,-0.2849" />
+       d="m 92.31,347.26 177.5,-0.2849"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

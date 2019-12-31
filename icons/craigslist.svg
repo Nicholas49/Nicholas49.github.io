@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="craigslist.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1027"
+     inkscape:window-height="902"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="152.58281"
+     inkscape:cy="148.90589"
+     inkscape:window-x="882"
+     inkscape:window-y="68"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,11 +51,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.51957239,0,0,0.51957239,19.423709,-94.480623)"
      id="layer1">
     <path
        id="path831"
        d="m 39.687501,218.9479 c -21.188138,9e-5 -38.364496,17.17644 -38.3645838,38.36458 8.23e-5,21.18814 17.1764428,38.3645 38.3645838,38.36459 21.188141,-9e-5 38.3645,-17.17645 38.364582,-38.36459 -8.8e-5,-21.18814 -17.176445,-38.36449 -38.364582,-38.36458 z m 3.575705,8.17296 c 15.2156,1.85516 26.658305,14.76664 26.671402,30.09491 -0.01229,5.44873 -1.491494,10.79363 -4.282285,15.47341 L 43.263206,252.02082 Z m -7.537731,0.0354 v 24.86456 L 13.877523,273.29745 C 10.857083,268.47691 9.2525359,262.9044 9.2469683,257.21576 9.2656598,241.96583 20.599775,229.09888 35.725475,227.15626 Z m 7.537731,35.4479 17.749049,16.07746 c -4.791282,4.76927 -11.038002,7.80195 -17.749049,8.61689 z m -7.537731,0 V 287.2816 C 29.31906,286.45382 23.34398,283.6032 18.669793,279.14457 Z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#1d0083;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#1d0083;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

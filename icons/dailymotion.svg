@@ -5,11 +5,37 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="dailymotion.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1109"
+     inkscape:window-height="876"
+     id="namedview7"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="143.13448"
+     inkscape:cy="150"
+     inkscape:window-x="768"
+     inkscape:window-y="94"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -25,12 +51,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.48639974,0,0,0.48639974,20.586226,-86.484755)"
      id="layer1">
     <path
        id="path825"
        transform="matrix(0.26458333,0,0,0.26458333,0,217.62499)"
-       d="M 267 12.142578 L 208 24.642578 L 208 111 C 208 111 189.66579 86.4707 150.35742 86.785156 C 108.20903 87.12229 51.133267 120.42624 51.072266 193.57227 C 51.043035 228.61 79.934871 291.94547 151.78516 292.5 C 186.75257 292.76986 210 269.28516 210 269.28516 L 209.64258 292.5 L 267 292.5 L 267 12.142578 z M 160.71484 139.28516 A 49.999998 49.999998 0 0 1 210.71484 189.28516 A 49.999998 49.999998 0 0 1 160.71484 239.28516 A 49.999998 49.999998 0 0 1 110.71484 189.28516 A 49.999998 49.999998 0 0 1 160.71484 139.28516 z "
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       d="m 267,12.142578 -59,12.5 V 111 C 208,111 189.66579,86.4707 150.35742,86.785156 108.20903,87.12229 51.133267,120.42624 51.072266,193.57227 51.043035,228.61 79.934871,291.94547 151.78516,292.5 186.75257,292.76986 210,269.28516 210,269.28516 L 209.64258,292.5 H 267 Z M 160.71484,139.28516 a 49.999998,49.999998 0 0 1 50,50 49.999998,49.999998 0 0 1 -50,50 49.999998,49.999998 0 0 1 -50,-50 49.999998,49.999998 0 0 1 50,-50 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

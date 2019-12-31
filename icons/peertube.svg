@@ -12,7 +12,7 @@
    viewBox="0 0 79.374998 79.375002"
    height="300"
    width="300"
-   sodipodi:docname="maps.svg"
+   sodipodi:docname="peertube.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -23,17 +23,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="894"
+     inkscape:window-width="891"
+     inkscape:window-height="828"
      id="namedview7"
      showgrid="false"
      borderlayer="true"
      inkscape:showpageshadow="false"
-     inkscape:zoom="2.2250293"
-     inkscape:cx="134.33904"
-     inkscape:cy="150.20902"
-     inkscape:window-x="953"
-     inkscape:window-y="100"
+     inkscape:zoom="1.5733333"
+     inkscape:cx="130.42966"
+     inkscape:cy="147.97509"
+     inkscape:window-x="1004"
+     inkscape:window-y="156"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg8" />
   <defs
@@ -51,13 +51,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.55282906,0,0,0.55282906,17.78674,-103.72531)"
+     transform="matrix(0.61327384,0,0,0.61327384,19.101862,-118.24346)"
      id="layer1">
     <path
-       id="path847"
-       transform="matrix(0.26458333,0,0,0.26458333,0,217.62499)"
-       d="M 150,5.5019531 C 82.325934,6.4181862 26.083898,76.197689 60,147.97266 c 8.458847,17.90105 90,148.49218 90,148.49218 0,0 65.66124,-100.10983 90,-145.66406 C 279.24737,77.342488 220.50189,4.5474334 150,5.5019531 Z m 0,63.1347659 a 34.999998,34.999998 0 0 1 35,35.000001 34.999998,34.999998 0 0 1 -35,35 34.999998,34.999998 0 0 1 -35,-35 34.999998,34.999998 0 0 1 35,-35.000001 z"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path823"
+       d="m 11.697096,257.51176 c 0.11982,0.0442 28.412129,18.93064 28.403255,18.96054 -0.007,0.0236 -28.410587,18.97561 -28.410587,18.97561 z M 40.137441,238.4991 11.677885,257.45635 v -37.99924 l 28.470137,18.98772 c 15.658576,10.44326 28.470739,19.00022 28.471473,19.01547 l -28.458262,19.00078 z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.04751184"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

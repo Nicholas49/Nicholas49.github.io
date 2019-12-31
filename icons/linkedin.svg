@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300">
+   width="300"
+   sodipodi:docname="linkedin.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1182"
+     inkscape:window-height="960"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="2.2250293"
+     inkscape:cx="149.23191"
+     inkscape:cy="151.32599"
+     inkscape:window-x="731"
+     inkscape:window-y="53"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -20,12 +44,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-217.62499)"
+     transform="matrix(0.46173873,0,0,0.46173873,21.219827,-80.175808)"
      id="layer1">
     <circle
        r="9.1536741"
@@ -43,6 +67,7 @@
     <path
        id="path827"
        d="m 28.971875,295.2802 v -50.53542 h 15.054792 v 6.95854 h 0.210275 c 0,0 4.097484,-8.40341 15.362932,-8.19382 11.010862,0.20485 18.464159,5.8363 18.398007,21.76384 -0.06126,14.7495 10e-7,30.06222 10e-7,30.06222 l -15.799311,-0.0256 c 0,0 0.0024,-19.08161 3e-6,-27.19427 -0.0013,-4.52615 -0.866603,-10.79155 -8.322165,-10.7292 -6.863112,0.0574 -9.337936,5.27412 -9.27556,11.26157 0.09248,8.87734 0.06082,26.63215 0.06082,26.63215 z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

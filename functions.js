@@ -29,6 +29,8 @@ var defaultSettings = {
       hexes[i].style.height = "10vmin";
     }
 
+    document.getElementById("menu").style.transform = "translateX(-100%)";
+
     generate();
 
     var hexcolor = randomColor(5);
@@ -223,11 +225,11 @@ var defaultSettings = {
 
   function openmenu(){
     var menu = document.getElementById("menu");
-    if(menu.style.left === "0%"){
-      menu.style.left = "-40%";
+    if(menu.style.transform === "translateX(-100%)"){
+      menu.style.transform = "translateX(0%)";
     }
     else{
-      menu.style.left = "0%";
+      menu.style.transform = "translateX(-100%)";
     }
   }
 

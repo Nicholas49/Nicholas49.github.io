@@ -5,37 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 79.374998 79.375002"
    height="300"
-   width="300"
-   sodipodi:docname="polygon.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="958"
-     inkscape:window-height="866"
-     id="namedview7"
-     showgrid="false"
-     borderlayer="true"
-     inkscape:showpageshadow="false"
-     inkscape:zoom="2.2250293"
-     inkscape:cx="155.07038"
-     inkscape:cy="161.19444"
-     inkscape:window-x="950"
-     inkscape:window-y="101"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg8" />
+   width="300">
   <defs
      id="defs2" />
   <metadata
@@ -51,13 +25,12 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.70077386,0,0,0.70077386,12.014525,-140.80862)"
+     transform="translate(0,-217.62499)"
      id="layer1">
     <path
        id="rect835"
        transform="matrix(0.26458333,0,0,0.26458333,0,217.62499)"
        d="M 148.14062,26.087891 71.796875,102.43164 h 76.343745 z m 8.00196,0 v 76.343749 h 76.3418 z m -84.345705,84.337889 76.343745,76.34375 v -76.34375 z m 84.345705,0 v 76.34375 l 76.3418,-76.34375 z m -90.000002,5.66211 v 76.34375 h 76.341802 z m 5.654297,84.33789 76.343745,76.34375 v -76.34375 z"
-       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#1d0083;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
-       inkscape:connector-curvature="0" />
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#1d0083;stroke-width:0;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
   </g>
 </svg>

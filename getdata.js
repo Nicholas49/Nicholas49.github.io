@@ -4,10 +4,10 @@ function geticondata(){
   var row = [0, -4, -3, -2, -1, 0, 1, 2, 3, 4];
 
   for(i = 0; i < col.length; i++){
-    col[i] = col[i] * 11 - 12.6;
+    col[i] = col[i] * 12.7 - 12.5;
   }
   for(i = 0; i < row.length; i++){
-    row[i] = row[i] * 6.3 - 6;
+    row[i] = row[i] * 7.4 - 7.2;
   }
 
   var hexlinks = [
@@ -83,7 +83,7 @@ function geticondata(){
     {xcoord: col[4], ycoord: row[2], color: "#000099", icon: "escapistmagazine", trget: "https://www.escapistmagazine.com/v2/"},
     {xcoord: col[4], ycoord: row[4], color: "#593E85", icon: "twitch", trget: "https://www.twitch.tv/"},
     {xcoord: col[4], ycoord: row[6], color: "#D70252", icon: "polygon", trget: "https://www.polygon.com/"},
-    {xcoord: col[4], ycoord: row[8], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[4], ycoord: row[8], color: "#3951C6", icon: "gamefaqs", trget: "https://gamefaqs.gamespot.com/"},
     {xcoord: col[5], ycoord: row[3], color: "#E8C75C", icon: "lol", trget: "https://na.leagueoflegends.com/en/"},
     {xcoord: col[5], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[5], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},

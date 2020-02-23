@@ -10,11 +10,12 @@ padding: 0px;
   margin: auto;
   position: relative;
   overflow: hidden;
+  background-color: #181818;
 }
 
 #hex1{
-  top: 40%;
-  left: 44%;
+  top: 37.6%;
+  left: 42.8%;
 }
 
 #hex2{
@@ -23,34 +24,34 @@ padding: 0px;
 }
 
 #hex3{
-  top: 40%;
-  left: 56%
+  top: 37.6%;
+  left: 57.2%
 }
 
 #hex4{
   top: 50%;
-  left: 38%;
+  left: 35.8%;
 }
 
 #hex5{
   top: 50%;
-  left: 62%;
+  left: 64.2%;
 }
 
 #hex6{
-  top: 60%;
-  left: 44%
+  top: 62.3%;
+  left: 42.8%
 }
 
 #hex7{
-  top: 60%;
-  left: 56%
+  top: 62.3%;
+  left: 57.2%
 }
 
 .hexbox{
 visibility: hidden;
 position: absolute;
-width: 70vmin;
+width: 90vmin;
 overflow: hidden;
 transition: height 0.7s;
 transform: translate(-50%, -50%) rotate(-150deg);
@@ -84,7 +85,7 @@ transform: translate(-50%, -50%) rotate(-150deg);
   visibility: hidden;
   position: absolute;
   width: 25vmin;
-  height: 12vmin;
+  height: 14vmin;
   overflow-x: hidden;
   overflow-y: hidden;
   opacity: 0.98;
@@ -106,8 +107,8 @@ transform: translate(-50%, -50%) rotate(-150deg);
 
 .icon{
   position: absolute;
-  width: 13.6vmin;
-  transform: translate(41.8%, -5.7%);
+  width: 16vmin;
+  transform: translate(28.3%, -6.4%);
 }
 
 .ikon{

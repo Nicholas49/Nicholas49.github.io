@@ -2,6 +2,7 @@ body{
 background-color: #181818;
 margin: 0px;
 padding: 0px;
+overflow: hidden;
 }
 
 #squarebox{
@@ -9,7 +10,7 @@ padding: 0px;
   height: 99vmin;
   margin: auto;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   background-color: #181818;
 }
 
@@ -113,7 +114,7 @@ transform: translate(-50%, -50%) rotate(-150deg);
 
 .ikon{
   position: absolute;
-  width: 7vmin;
+  width: 8vmin;
   transform: translate(-50%, -50%);
 }
 

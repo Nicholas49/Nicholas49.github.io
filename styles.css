@@ -16,7 +16,7 @@ overflow: hidden;
 
 #hex1{
   top: 37.6%;
-  left: 42.8%;
+  left: 43%;
 }
 
 #hex2{
@@ -26,7 +26,7 @@ overflow: hidden;
 
 #hex3{
   top: 37.6%;
-  left: 57.2%
+  left: 57%
 }
 
 #hex4{
@@ -41,12 +41,12 @@ overflow: hidden;
 
 #hex6{
   top: 62.3%;
-  left: 42.8%
+  left: 43%
 }
 
 #hex7{
   top: 62.3%;
-  left: 57.2%
+  left: 57%
 }
 
 .hexbox{

@@ -120,11 +120,11 @@ function geticondata(){
     {xcoord: col[3], ycoord: row[9], color: "#666666", icon: "nytimes", trget: "https://www.nytimes.com/"},
     {xcoord: col[4], ycoord: row[2], color: "#CC0000", icon: "espn", trget: "https://www.espn.com/"},
     {xcoord: col[4], ycoord: row[4], color: "#008272", icon: "bing", trget: "https://www.bing.com/"},
-    {xcoord: col[4], ycoord: row[6], color: "#FF5722", icon: "blogger", trget: "https://www.blogger.com/"},
+    {xcoord: col[4], ycoord: row[6], color: "#FF2222", icon: "coronavirusgraphs", trget: "https://coronavirusgraphs.com/"},
     {xcoord: col[4], ycoord: row[8], color: "#034EA2", icon: "weather", trget: "https://weather.com/"},
     {xcoord: col[5], ycoord: row[3], color: "#ED008C", icon: "verge", trget: "https://www.theverge.com/"},
     {xcoord: col[5], ycoord: row[5], color: "#1C6190", icon: "digg", trget: "https://digg.com/"},
-    {xcoord: col[5], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[5], ycoord: row[7], color: "#FF5722", icon: "blogger", trget: "https://www.blogger.com/"},
     //commerce
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[1], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},

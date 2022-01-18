@@ -55,7 +55,7 @@ function geticondata(){
     {xcoord: col[1], ycoord: row[7], color: "#20A464", icon: "googledrive", trget: "https://www.google.com/drive/"},
     {xcoord: col[2], ycoord: row[2], color: "#F48024", icon: "stackoverflow", trget: "https://stackoverflow.com/"},
     {xcoord: col[2], ycoord: row[4], color: "#333333", icon: "github", trget: "https://github.com/"},
-    {xcoord: col[2], ycoord: row[6], color: "#577BB4", icon: "whentowork", trget: "https://whentowork.com/"},
+    {xcoord: col[2], ycoord: row[6], color: "#5708B4", icon: "udemy", trget: "https://umsystem.udemy.com/organization/home//"},
     {xcoord: col[2], ycoord: row[8], color: "#007EE6", icon: "dropbox", trget: "https://www.dropbox.com/"},
     {xcoord: col[3], ycoord: row[1], color: "#90151A", icon: "wolfram", trget: "https://www.wolframalpha.com/"},
     {xcoord: col[3], ycoord: row[3], color: "#4CAF50", icon: "w3schools", trget: "https://www.w3schools.com/"},

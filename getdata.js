@@ -63,10 +63,10 @@ function geticondata(){
     {xcoord: col[3], ycoord: row[9], color: "#333333", icon: "pythonanywhere", trget: "https://www.pythonanywhere.com/"},
     {xcoord: col[4], ycoord: row[2], color: "#DB1F29", icon: "jira", trget: "https://jira-srv.mst.edu/browse/ASI-8280"},
     {xcoord: col[4], ycoord: row[4], color: "#5C93CE", icon: "asilinks", trget: "https://itweb.mst.edu/auth-cgi-bin/cgiwrap/mstapplink/index.pl"},
-    {xcoord: col[4], ycoord: row[6], color: "#EB3C03", icon: "office", trget: "https://www.office.com/"},
+    {xcoord: col[4], ycoord: row[6], color: "#EB3C03", icon: "fisheye", trget: "https://crucible.mst.edu/crucible/"},
     {xcoord: col[4], ycoord: row[8], color: "#EE1808", icon: "canvas", trget: "https://canvas.instructure.com/login/canvas"},
     {xcoord: col[5], ycoord: row[3], color: "#0078D4", icon: "onedrive", trget: "https://onedrive.live.com/about/en-us/"},
-    {xcoord: col[5], ycoord: row[5], color: "#387BBF", icon: "dictionary", trget: "https://www.dictionary.com/"},
+    {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/apps-team/docs"},
     {xcoord: col[5], ycoord: row[7], color: "#5C93CE", icon: "launchcode", trget: ""},
     //gaming
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},

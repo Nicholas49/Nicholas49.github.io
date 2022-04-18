@@ -67,7 +67,7 @@ function geticondata(){
     {xcoord: col[4], ycoord: row[8], color: "#EE1808", icon: "canvas", trget: "https://canvas.instructure.com/login/canvas"},
     {xcoord: col[5], ycoord: row[3], color: "#0078D4", icon: "onedrive", trget: "https://onedrive.live.com/about/en-us/"},
     {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/apps-team/docs"},
-    {xcoord: col[5], ycoord: row[7], color: "#5C93CE", icon: "launchcode", trget: ""},
+    {xcoord: col[5], ycoord: row[7], color: "#78d053", icon: "changemanagement", trget: "https://itweb.mst.edu/~cmweb"},
     //gaming
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[1], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},

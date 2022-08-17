@@ -50,7 +50,7 @@ function geticondata(){
     {xcoord: col[5], ycoord: row[5], color: "#000000", icon: "blank", trget: ""},
     {xcoord: col[5], ycoord: row[7], color: "#000000", icon: "blank", trget: ""},
     //creation
-    {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
+    {xcoord: col[1], ycoord: row[3], color: "#007AB6", icon: "platform9", trget: "https://mst.platform9.net/ui/login"},
     {xcoord: col[1], ycoord: row[5], color: "#28B573", icon: "grammarly", trget: "https://www.grammarly.com"},
     {xcoord: col[1], ycoord: row[7], color: "#20A464", icon: "googledrive", trget: "https://www.google.com/drive/"},
     {xcoord: col[2], ycoord: row[2], color: "#F48024", icon: "stackoverflow", trget: "https://stackoverflow.com/"},
@@ -66,7 +66,7 @@ function geticondata(){
     {xcoord: col[4], ycoord: row[6], color: "#EB3C03", icon: "fisheye", trget: "https://crucible.mst.edu/crucible/"},
     {xcoord: col[4], ycoord: row[8], color: "#EE1808", icon: "canvas", trget: "https://canvas.instructure.com/login/canvas"},
     {xcoord: col[5], ycoord: row[3], color: "#0078D4", icon: "onedrive", trget: "https://onedrive.live.com/about/en-us/"},
-    {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/apps-team/docs"},
+    {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/apps-team/"},
     {xcoord: col[5], ycoord: row[7], color: "#78d053", icon: "changemanagement", trget: "https://itweb.mst.edu/~cmweb"},
     //gaming
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},

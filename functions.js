@@ -26,7 +26,7 @@ var defaultSettings = {
 
     hexes = document.getElementsByClassName("hexbox");
     for (i = 0; i < hexes.length; i++) {
-      hexes[i].style.height = "13vmin";
+      hexes[i].style.width = "13vmin";
     }
 
     document.getElementById("menu").style.transform = "translateX(-100%)";
@@ -46,20 +46,20 @@ var defaultSettings = {
     var already;
     var parentbox = caller.parentNode.parentNode;
 
-    if(parentbox.style.height === "70vmin"){
+    if(parentbox.style.width === "70vmin"){
       already = true;
     }
 
     hexes = document.getElementsByClassName("hexbox");
     for (i = 0; i < hexes.length; i++) {
       hexes[i].style.zIndex = "0";
-      hexes[i].style.height = "13vmin";
+      hexes[i].style.width = "13vmin";
     }
 
     parentbox.style.zIndex = "1";
 
     if(!already){
-      parentbox.style.height = "70vmin";
+      parentbox.style.width = "70vmin";
     }
   }
 

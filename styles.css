@@ -52,10 +52,10 @@ overflow: hidden;
 .hexbox{
 visibility: hidden;
 position: absolute;
-width: 90vmin;
+height: 90vmin;
 overflow: hidden;
-transition: height 0.7s;
-transform: translate(-50%, -50%) rotate(-150deg);
+transition: width 0.7s;
+transform: translate(-50%, -50%) rotate(0.01deg);
 }
 
 .hexbox > div, .hexbox > div > div{
@@ -78,7 +78,7 @@ transform: translate(-50%, -50%) rotate(-150deg);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(30deg);
+  transform: translate(-50%, -50%) rotate(-120deg);
   background-color: #660066;
 }
 

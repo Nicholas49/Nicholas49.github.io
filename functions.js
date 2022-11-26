@@ -24,14 +24,14 @@ var defaultSettings = {
 
 //    document.body.style.backgroundColor = randomColor(1);
 
+    document.getElementById("menu").style.transform = "translateX(-100%)";
+
+    generate();
+
     hexes = document.getElementsByClassName("hexbox");
     for (i = 0; i < hexes.length; i++) {
       hexes[i].style.width = "13vmin";
     }
-
-    document.getElementById("menu").style.transform = "translateX(-100%)";
-
-    generate();
 
     var hexcolor = randomColor(5);
 
@@ -39,27 +39,35 @@ var defaultSettings = {
     for (i = 0; i < puffs.length; i++) {
       puffs[i].parentNode.style.backgroundColor = hexcolor;
     }
+
+    setInterval(showTime, 10000);
+    showTime();
   }
 
   function xpand(caller) {
 
     var already;
-    var parentbox = caller.parentNode.parentNode;
+    if (caller.className == 'ikon'){
+      var hexbox = caller.previousSibling;
+    }
+    else{
+      var hexbox = caller.parentNode.parentNode;
+    }
 
-    if(parentbox.style.width === "70vmin"){
+    if(hexbox.style.width === "70vmin"){
       already = true;
     }
 
     hexes = document.getElementsByClassName("hexbox");
     for (i = 0; i < hexes.length; i++) {
-      hexes[i].style.zIndex = "0";
+      hexes[i].parentNode.style.zIndex = "0";
       hexes[i].style.width = "13vmin";
     }
 
-    parentbox.style.zIndex = "1";
+    hexbox.parentNode.style.zIndex = "1";
 
     if(!already){
-      parentbox.style.width = "70vmin";
+      hexbox.style.width = "70vmin";
     }
   }
 
@@ -69,14 +77,15 @@ var defaultSettings = {
 
     var hexlinks = geticondata();
 
-    stations = document.getElementsByClassName('stationary');
+    stations = document.getElementsByClassName('container');
     for (i = 0; i < stations.length; i++){
       var innercontent = "";
 
-      innercontent += "<img class='ikon' src='icons/" + caticons[i] + ".svg'/>";
+      innercontent += "<div class='hexbox'><div><div onclick='xpand(this)'><div class='stationary'>";
       for (j = 0; j < 18; j++){
         innercontent += "<a href='" + hexlinks[j].trget + "'><div class='ahexbox'><div><div onmouseover=\"setr(this, this.id)\" onmouseout=\"unsetr(this)\"></div></div></div></a>";
       }
+      innercontent += "</div></div></div></div><img class='ikon' src='icons/" + caticons[i] + ".svg' onclick='xpand(this)' />";
       stations[i].innerHTML = innercontent;
     }
 
@@ -256,4 +265,42 @@ var defaultSettings = {
     for(i = 0; i < puffs.length; i++){
       puffs[i].parentNode.style.backgroundColor = c;
     }
+  }
+
+  function showTime(){
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let day = String(time.getDate());
+    var am_pm = "AM";
+    let monthLookup = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    let month = monthLookup[time.getMonth()];
+
+    if (hour > 12) {
+      hour -= 12;
+      am_pm = "PM";
+    }
+    if (hour == 0) {
+      hour = 12;
+      am_pm = "AM";
+    }
+
+    var daySuffix = "th";
+
+    if (day.length == 1 || day.slice(-2,-1) != '1'){
+      switch(day.slice(-1)) {
+        case '1':
+          daySuffix = 'st';
+          break;
+        case '2':
+          daySuffix = 'nd';
+          break;
+        case '3':
+          daySuffix = 'rd';
+          break;
+      }
+    }
+
+    let currentTime = hour + ":" + min + " " + am_pm + "<br>" + month + " " + day + daySuffix;
+    document.getElementById("clock").innerHTML = currentTime;
   }

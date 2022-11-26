@@ -49,6 +49,14 @@ overflow: hidden;
   left: 57.1%
 }
 
+.container{
+  width: 0;
+  height: 0;
+  position: absolute;
+  transform: translate(-50%, -50%) rotat(0.01deg);
+  background-color: #660066;
+}
+
 .hexbox{
 visibility: hidden;
 position: absolute;
@@ -116,6 +124,10 @@ transform: translate(-50%, -50%) rotate(0.01deg);
   position: absolute;
   width: 8vmin;
   transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  visibility: visible;
 }
 
 #searchbox{
@@ -229,4 +241,12 @@ transform: translate(-50%, -50%) rotate(0.01deg);
   width: 100px;
   height: 100px;
   padding: 0px;
+}
+
+#clock {
+  color: #ffffff;
+  position: absolute;
+  font-size: 5vmin;
+  top: 3vmin;
+  right: 3vmin;
 }

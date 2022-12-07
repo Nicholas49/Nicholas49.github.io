@@ -12,40 +12,41 @@ overflow: hidden;
   position: relative;
   overflow: visible;
   background-color: #181818;
+  clear: both;
 }
 
 #hex1{
-  top: 37.6%;
+  top: 30.6%;
   left: 42.9%;
 }
 
 #hex2{
-  top: 50%;
+  top: 43%;
   left: 50%;
 }
 
 #hex3{
-  top: 37.6%;
+  top: 30.6%;
   left: 57.1%
 }
 
 #hex4{
-  top: 50%;
+  top: 43%;
   left: 35.8%;
 }
 
 #hex5{
-  top: 50%;
+  top: 43%;
   left: 64.2%;
 }
 
 #hex6{
-  top: 62.3%;
+  top: 55.3%;
   left: 42.9%
 }
 
 #hex7{
-  top: 62.3%;
+  top: 55.3%;
   left: 57.1%
 }
 
@@ -130,24 +131,39 @@ transform: translate(-50%, -50%) rotate(0.01deg);
   visibility: visible;
 }
 
-#searchbox{
+#headertable{
   z-index: 1;
-  font-size: 0;
-  position: absolute;
-  width: 98%;
-  left: 50%;
-  top: 3vmin;
-  transform: translate(-50%, 0%);
-  text-align: center;
+  min-width: calc(50vw + 175px);
+  width: 500px;
+  max-width: 100vw;
+  float: right;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  border-collapse: collapse;
 }
 
-#searchbox input{
-  font-size: 6.4vmin;
+#headertable div{
+}
+
+#headertable #center{
+}
+
+#headertable #center td{
+}
+
+#headertable #right{
+}
+
+#headertable input{
+  margin: auto;
+  font-size: min(10vw, 40px);
+  display: inline-block;
   font-family: sans-serif;
   border: 0px;
   outline: none;
   background: transparent;
-  max-width: 75vw;
   color:#ffffff;
   text-align: center;
   filter: opacity(30%);
@@ -155,22 +171,22 @@ transform: translate(-50%, -50%) rotate(0.01deg);
   border-bottom: 0.5vmin solid #777777;
 }
 
-#searchbox button{
+#headertable button{
+  display: inline-block;
   border: 0px;
   padding: 1px;
   background-color: transparent;
-  height: 100%;
-  width: 11vmin;
-  font-size: 6.4vmin;
+  font-size: min(6vw, 40px);
   transition: background-color 0.5s;
+  width: min(7vw, 40px);
+}
+
+#headertable button img{
+  width: 100%;
 }
 
 #searchbox button:hover{
   background-color: #333333;
-}
-
-#searchbox img{
-  height: 5vmin;
 }
 
 #menubutton{
@@ -244,9 +260,9 @@ transform: translate(-50%, -50%) rotate(0.01deg);
 }
 
 #clock {
+  width: min(15vw, 150px);
   color: #ffffff;
-  position: absolute;
-  font-size: 5vmin;
-  top: 3vmin;
-  right: 3vmin;
+  font-size: min(3vw, 30px);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

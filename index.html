@@ -7,12 +7,18 @@
 
 <body onload="loadpage()">
 
-  <div id="searchbox">
-
-    <button></button>
-    <input type="text" id="searchline" onkeypress='return verifyKey(event)' size="15" autofocus>
-    <button onclick="interpret()"><img src='icons/search.svg'/></button>
+  <div id="headertable">
+    <table id="center">
+      <tbody>
+        <tr>
+          <td><input type="text" id="searchline" onkeypress='return verifyKey(event)' size="15" autofocus></td>
+          <td><button onclick="interpret()"><img src='icons/search.svg'/></button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="clock"></div>
   </div>
+
 
   <div id="squarebox">
 
@@ -32,7 +38,7 @@
 
   </div>
 
-  <div id="clock"></div>
+  
 
   <div id="menu">
 

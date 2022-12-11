@@ -63,7 +63,6 @@ visibility: hidden;
 position: absolute;
 height: 90vmin;
 overflow: hidden;
-transition: width 0.7s;
 transform: translate(-50%, -50%) rotate(0.01deg);
 }
 
@@ -158,7 +157,7 @@ transform: translate(-50%, -50%) rotate(0.01deg);
 
 #headertable input{
   margin: auto;
-  font-size: min(10vw, 40px);
+  font-size: min(8vw, 40px);
   display: inline-block;
   font-family: sans-serif;
   border: 0px;
@@ -260,9 +259,9 @@ transform: translate(-50%, -50%) rotate(0.01deg);
 }
 
 #clock {
-  width: min(15vw, 150px);
+  width: min(20vw, 150px);
   color: #ffffff;
-  font-size: min(3vw, 30px);
+  font-size: min(3.5vw, 30px);
   text-overflow: ellipsis;
   overflow: hidden;
 }

@@ -44,6 +44,13 @@ var defaultSettings = {
     showTime();
   }
 
+  function resetHexboxesTransition(){
+    hexes = document.getElementsByClassName("hexbox");
+    for (i = 0; i < hexes.length; i++) {
+      hexes[i].style.transition = "width 0s";
+    }
+  }
+
   function xpand(caller) {
 
     var already;
@@ -62,6 +69,7 @@ var defaultSettings = {
     for (i = 0; i < hexes.length; i++) {
       hexes[i].parentNode.style.zIndex = "0";
       hexes[i].style.width = "13vmin";
+      hexes[i].style.transition = "width 0.7s";
     }
 
     hexbox.parentNode.style.zIndex = "1";
@@ -69,6 +77,8 @@ var defaultSettings = {
     if(!already){
       hexbox.style.width = "70vmin";
     }
+
+    setTimeout(resetHexboxesTransition, 800);
   }
 
   function generate(){
@@ -301,6 +311,9 @@ var defaultSettings = {
       }
     }
 
-    let currentTime = hour + ":" + min + " " + am_pm + "<br>" + month + " " + day + daySuffix;
+    var mins = (min < 10)? "0" + min: min;
+
+
+    let currentTime = hour + ":" + mins + " " + am_pm + "<br>" + month + " " + day + daySuffix;
     document.getElementById("clock").innerHTML = currentTime;
   }

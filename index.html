@@ -11,7 +11,7 @@
     <table id="center">
       <tbody>
         <tr>
-          <td><input type="text" id="searchline" onkeypress='return verifyKey(event)' size="15" autofocus></td>
+          <td><input type="text" id="searchline" onkeydown='verifyKey(event)' size="15" autofocus></td>
           <td><button onclick="interpret()"><img src='icons/search.svg'/></button></td>
         </tr>
       </tbody>

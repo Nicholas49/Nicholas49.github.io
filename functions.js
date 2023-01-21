@@ -112,27 +112,30 @@ var defaultSettings = {
 
 
   function verifyKey(e) {
-      var keycode;
-      if (window.event) {
-          keycode = window.event.keyCode;
-      } else if (e) {
-          keycode = e.which;
-      }
-      if (keycode === 13) {
-          interpret();
-          clearInput();
-      }
-      checkInputLength();
+    key = e.key;
+    if (key === 'Enter') {
+        interpret();
+        clearInput();
+    }
+    checkInputLength();
   }
 
 
   function checkInputLength() {
-      var input = document.getElementById('searchline');
-      if (input.value.length > 15) {
-          input.size = input.value.length + 1;
-      } else {
-          input.size = 15;
-      }
+    var input = document.getElementById('searchline');
+    var headertable = document.getElementById('headertable');
+    var pxoffset = 0;
+    var len = input.value.length
+    if (len > 30){
+      input.size = 30;
+      headertable.style.minWidth = 'calc(50vw + 330px)';
+    } else if (len > 15) {
+      input.size = len + 1;
+      pxoffset = len * 11;
+      headertable.style.minWidth = 'calc(50vw + ' + pxoffset + 'px)';
+    } else {
+      input.size = 15;
+    }
   }
 
   function interpret() {

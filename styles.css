@@ -141,18 +141,23 @@ transform: translate(-50%, -50%) rotate(0.01deg);
   display: flex;
   justify-content: space-between;
   border-collapse: collapse;
+  border: 1px solid white
 }
 
 #headertable div{
+  border: 1px solid red
 }
 
 #headertable #center{
+  border: 1px solid blue
 }
 
 #headertable #center td{
+  border: 1px solid green
 }
 
 #headertable #right{
+  border: 1px solid yellow
 }
 
 #headertable input{
@@ -168,6 +173,7 @@ transform: translate(-50%, -50%) rotate(0.01deg);
   filter: opacity(30%);
   vertical-align: top;
   border-bottom: 0.5vmin solid #777777;
+  border: 1px solid white
 }
 
 #headertable button{

@@ -65,7 +65,7 @@ function geticondata(){
     {xcoord: col[4], ycoord: row[4], color: "#5C93CE", icon: "asilinks", trget: "https://itweb.mst.edu/auth-cgi-bin/cgiwrap/mstapplink/index.pl"},
     {xcoord: col[4], ycoord: row[6], color: "#2583FE", icon: "fisheye", trget: "https://crucible.mst.edu/crucible/"},
     {xcoord: col[4], ycoord: row[8], color: "#2583FE", icon: "crucible", trget: "https://crucible.mst.edu/~crstatus"},
-    {xcoord: col[5], ycoord: row[3], color: "#0078D4", icon: "onedrive", trget: "https://onedrive.live.com/about/en-us/"},
+    {xcoord: col[5], ycoord: row[3], color: "#0078D4", icon: "onedrive", trget: "https://localhost:8443"},
     {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/apps-team/"},
     {xcoord: col[5], ycoord: row[7], color: "#78d053", icon: "changemanagement", trget: "https://itweb.mst.edu/~cmweb"},
     //gaming

@@ -1,146 +1,144 @@
 body{
-background-color: #181818;
-margin: 0px;
-padding: 0px;
-overflow: hidden;
+	background-color: #181818;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
 }
 
 #squarebox{
-  width: 99vmin;
-  height: 99vmin;
-  margin: auto;
-  position: relative;
-  overflow: visible;
-  background-color: #181818;
-  clear: both;
+	width: 99vmin;
+	height: 99vmin;
+	margin: auto;
+	position: relative;
+	overflow: visible;
+	background-color: #181818;
+	clear: both;
 }
 
 #hex1{
-  top: 30.6%;
-  left: 42.9%;
+	top: 30.6%;
+	left: 42.9%;
 }
 
 #hex2{
-  top: 43%;
-  left: 50%;
+	top: 43%;
+	left: 50%;
 }
 
 #hex3{
-  top: 30.6%;
-  left: 57.1%
+	top: 30.6%;
+	left: 57.1%
 }
 
 #hex4{
-  top: 43%;
-  left: 35.8%;
+	top: 43%;
+	left: 35.8%;
 }
 
 #hex5{
-  top: 43%;
-  left: 64.2%;
+	top: 43%;
+	left: 64.2%;
 }
 
 #hex6{
-  top: 55.3%;
-  left: 42.9%
+	top: 55.3%;
+	left: 42.9%
 }
 
 #hex7{
-  top: 55.3%;
-  left: 57.1%
+	top: 55.3%;
+	left: 57.1%
 }
 
 .container{
-  width: 0;
-  height: 0;
-  position: absolute;
-  transform: translate(-50%, -50%) rotat(0.01deg);
-  background-color: #660066;
+	width: 0;
+	height: 0;
+	position: absolute;
+	transform: translate(-50%, -50%) rotat(0.01deg);
+	background-color: #660066;
 }
 
 .hexbox{
-visibility: hidden;
-position: absolute;
-height: 90vmin;
-overflow: hidden;
-transform: translate(-50%, -50%) rotate(0.01deg);
+	visibility: hidden;
+	position: absolute;
+	height: 90vmin;
+	overflow: hidden;
+	transform: translate(-50%, -50%) rotate(0.01deg);
 }
 
 .hexbox > div, .hexbox > div > div{
-  width: 100%;
-  height: 100%;
-  transform: rotate(60deg);
-  overflow: hidden;
+	width: 100%;
+	height: 100%;
+	transform: rotate(60deg);
+	overflow: hidden;
 }
 
 .hexbox > div{
 }
 
 .hexbox > div > div{
-  background-color: #bad;
-  visibility: visible;
-  opacity: 0.98;
+	background-color: #bad;
+	visibility: visible;
+	opacity: 0.98;
 }
 
 .stationary{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-120deg);
-  background-color: #660066;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-120deg);
+	background-color: #660066;
 }
 
 .ahexbox{
-  visibility: hidden;
-  position: absolute;
-  width: 25vmin;
-  height: 14vmin;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  opacity: 0.98;
+	visibility: hidden;
+	position: absolute;
+	width: 25vmin;
+	height: 14vmin;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	opacity: 0.98;
 }
 
 .ahexbox > div, .ahexbox > div > div{
-  width: 100%;
-  height: 100%;
-  transform: rotate(-60deg);
-  overflow-x: hidden;
-  overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-60deg);
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .ahexbox > div > div{
-  background-color: #000000;
-  visibility: visible;
-  transition: background-color 0.3s;
+	background-color: #000000;
+	visibility: visible;
+	transition: background-color 0.3s;
 }
 
 .icon{
-  position: absolute;
-  width: 16vmin;
-  transform: translate(28.3%, -6.4%);
+	position: absolute;
+	width: 16vmin;
+	transform: translate(28.3%, -6.4%);
 }
 
 .ikon{
-  position: absolute;
-  width: 8vmin;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  z-index: 10;
-  visibility: visible;
+	position: absolute;
+	width: 8vmin;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	z-index: 10;
+	visibility: visible;
 }
 
 #headertable{
-  z-index: 1;
-  min-width: calc(50vw + 175px);
-  width: 500px;
-  max-width: 100vw;
-  float: right;
-  top: 0px;
-  right: 0px;
-  display: flex;
-  justify-content: space-between;
-  border-collapse: collapse;
+	z-index: 1;
+	top: 0px;
+	justify-content: space-between;
+	border-collapse: collapse;
+}
+
+.col {
+	flex-direction: row;
 }
 
 #headertable div{
@@ -155,114 +153,122 @@ transform: translate(-50%, -50%) rotate(0.01deg);
 #headertable #right{
 }
 
-#headertable input{
-  margin: auto;
-  font-size: min(8vw, 40px);
-  display: inline-block;
-  font-family: sans-serif;
-  border: 0px;
-  outline: none;
-  background: transparent;
-  color:#ffffff;
-  text-align: center;
-  filter: opacity(30%);
-  vertical-align: top;
-  border-bottom: 0.5vmin solid #777777;
+#headertable .search {
+	display: flex;
+	justify-content: center;
 }
 
-#headertable button{
-  display: inline-block;
-  border: 0px;
-  padding: 1px;
-  background-color: transparent;
-  font-size: min(6vw, 40px);
-  transition: background-color 0.5s;
-  width: min(7vw, 40px);
+#headertable .search input {
+	font-size: min(8vw, 40px);
+	display: inline-block;
+	font-family: sans-serif;
+	border: 0px;
+	outline: none;
+	background: transparent;
+	color:#ffffff;
+	text-align: center;
+	filter: opacity(30%);
+	vertical-align: top;
+	border-bottom: 0.5vmin solid #777777;
+}
+
+#headertable .search div {
+	width: min(6vw, 40px);
+}
+
+#headertable .search button {
+	display: inline-block;
+	border: 0px;
+	padding: 1px;
+	background-color: transparent;
+	font-size: min(6vw, 40px);
+	transition: background-color 0.5s;
+	width: min(7vw, 40px);
 }
 
 #headertable button img{
-  width: 100%;
+	width: 100%;
 }
 
 #searchbox button:hover{
-  background-color: #333333;
+	background-color: #333333;
 }
 
 #menubutton{
-  background-color: transparent;
-  width: 50px;
-  height: 50px;
-  top: 0px;
-  left: 0px;
-  position: absolute;
-  border: 0px;
-  z-index: 11;
+	background-color: transparent;
+	width: 50px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	border: 0px;
+	z-index: 11;
 }
 
 #menubutton img{
-  height: 3vmin;
-  min-height: 20px;
-  opacity: 0.3;
-  transition: opacity 0.5s;
+	height: 3vmin;
+	min-height: 20px;
+	opacity: 0.3;
+	transition: opacity 0.5s;
 }
 
 #menubutton img:hover{
-  opacity: 1;
+	opacity: 1;
 }
 
 #menu{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  max-width: 500px;
-  background-color: #333333;
-  opacity: 0.98;
-  z-index: 11;
-  transition: transform 0.5s;
-  overflow: hidden;
-  transform: translateX(-100%);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	max-width: 500px;
+	background-color: #333333;
+	opacity: 0.98;
+	z-index: 11;
+	transition: transform 0.5s;
+	overflow: hidden;
+	transform: translateX(-100%);
 }
 
 #menu table{
-  position: relative;
-  top: 40px;
-  background-color: #333333;
-  color: #ffffff;
-  text-align: center;
-  border-collapse: collapse;
-  border: 0px;
-  width: 100%;
+	position: relative;
+	top: 40px;
+	background-color: #333333;
+	color: #ffffff;
+	text-align: center;
+	border-collapse: collapse;
+	border: 0px;
+	width: 100%;
 }
 
 #menu table td{
-  padding: 0.5vmin;
+	padding: 0.5vmin;
 }
 
 #menu table tr:nth-child(even){
-  background-color: #222222;
+	background-color: #222222;
 }
 
 #colorpicker{
-  position:relative;
-  top: 5vmin;
-  color: #ffffff;
-  text-align: center;
+	position:relative;
+	top: 5vmin;
+	color: #ffffff;
+	text-align: center;
 }
 
 #colorpicker > input{
-  border: 0px;
-  width: 100px;
-  height: 100px;
-  padding: 0px;
+	border: 0px;
+	width: 100px;
+	height: 100px;
+	padding: 0px;
 }
 
 #clock {
-  width: min(20vw, 150px);
-  color: #ffffff;
-  font-size: min(3.5vw, 30px);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  font-family: sans-serif;
+	width: min(20vw, 150px);
+	color: white;
+	font-size: min(3.5vw, 30px);
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-family: sans-serif;
 }

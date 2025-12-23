@@ -66,7 +66,7 @@ function geticondata(){
     {xcoord: col[4], ycoord: row[6], color: "#2583FE", icon: "fisheye", trget: "https://crucible.mst.edu/crucible/"},
     {xcoord: col[4], ycoord: row[8], color: "#2583FE", icon: "crucible", trget: "https://crucible.mst.edu/~crstatus"},
     {xcoord: col[5], ycoord: row[3], color: "#0078D4", icon: "dev", trget: "https://localhost.apps-dev.mst.edu:8443/"},
-    {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/apps-team/"},
+    {xcoord: col[5], ycoord: row[5], color: "#FFCC00", icon: "gitlab", trget: "https://git.mst.edu/it/apps/process-docs"},
     {xcoord: col[5], ycoord: row[7], color: "#78d053", icon: "changemanagement", trget: "https://cmweb.apps.mst.edu/auth-cgi-bin/cgiwrap/cmweb/main.pl?mode=list&filtered=yes&filter_planned=on&filter_audit=on&filter_review=on&filter_scheduled=on&filter_owner=nrfqp4&filter_participants=&filter_changedate=&filter_appuser=&filter_summary=&filter_services=&filter_campuses_affected="},
     //gaming
     {xcoord: col[1], ycoord: row[3], color: "#000000", icon: "blank", trget: ""},
@@ -148,3 +148,4 @@ function geticondata(){
 
   return hexlinks;
 }
+

@@ -83,7 +83,7 @@ var defaultSettings = {
 
   function generate(){
 
-    var caticons = ["media", "net", "pencil", "gaming", "social", "news", "commerce"];
+    var caticons = ["media", "net", "mst", "gaming", "social", "news", "commerce"];
 
     var hexlinks = geticondata();
 
